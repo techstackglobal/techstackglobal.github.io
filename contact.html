@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TechStack Global</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body class="dark-theme">
+    <div class="ambient-grid"></div>
+    <header class="glass-header">
+        <nav class="container">
+            <div class="logo"><a href="index.html">TechStack<span class="accent">Global</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Software Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container section-padding" style="margin-top: 80px; max-width: 600px;">
+        <div class="glass-panel" style="padding: 4rem;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Get in <span class="accent">Touch</span></h1>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST"
+                style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <input type="text" name="name" placeholder="Your Name" required
+                    style="padding: 1rem; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(0,0,0,0.3); color: white; width: 100%; font-family: inherit;">
+                <input type="email" name="email" placeholder="Your Email" required
+                    style="padding: 1rem; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(0,0,0,0.3); color: white; width: 100%; font-family: inherit;">
+                <textarea name="message" placeholder="Your Message" rows="5" required
+                    style="padding: 1rem; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(0,0,0,0.3); color: white; width: 100%; font-family: inherit; resize: vertical;"></textarea>
+                <input type="hidden" name="_next" value="https://techstackglobal.github.io/b2b_blog/">
+                <button type="submit" class="btn-primary" style="font-size: 1.1rem;">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <footer class="glass-footer" style="margin-top: 6rem;">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>TechStack<span class="accent">Global</span></h3>
+                <p>The definitive guide to elite B2B tech platforms.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> TechStack Global. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

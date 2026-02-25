@@ -4,149 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStack Global | 3D Interactive & WebGL Experiences</title>
+    <title>TechStack Global | Smart Tech Tools for Smarter Businesses</title>
     <meta name="description"
-        content="The elite platform for zero-cost 3D modeling, real-time physics, material layers, and interactive web experiences.">
+        content="The elite B2B authority platform for SaaS tools, web hosting, AI technology, and digital assets. Build your ultimate startup tech stack.">
+    <!-- Google Fonts: Inter for that premium tech feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.png">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-    <header>
+<body class="dark-theme">
+    <!-- Ambient Background Grid (Visual Only) -->
+    <div class="ambient-grid"></div>
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <header class="glass-header">
         <nav class="container">
             <div class="logo">
-                <a href="index.html" style="text-decoration: none; color: inherit;">
-                    TechStack<span>Global</span>
+                <a href="index.html">
+                    TechStack<span class="accent">Global</span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#blueprints">Blueprints</a></li>
-                <li><a href="posts/contact.html">Partnerships</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog.html">Software Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <canvas id="canvas3d"></canvas>
-            <div class="container hero-content">
-                <h1>Wealth Engineering<br>Through 2026 Automation</h1>
-                <p>Mastering polygonal editing, real-time physics simulations, and material layers for next-level visual
-                    experiences at zero cost.
-                </p>
-                <a href="#blueprints" class="btn-primary">Explore Workflows</a>
+        <!-- SEO Semantic Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <span class="badge">B2B SaaS Authority</span>
+                <h1>Smart Tech Tools for <br><span class="gradient-text">Smarter Businesses</span></h1>
+                <p class="hero-sub">Scale your startup faster with vetted reviews on developer tools, premium hosting,
+                    AI software, and ultimate productivity stacks.</p>
+                <div class="hero-ctas">
+                    <a href="#recommended" class="btn-primary">Explore Top Tools</a>
+                    <a href="blog.html" class="btn-secondary">Read Latest Reviews</a>
+                </div>
+            </div>
+            <!-- Abstract futuristic graphic representation -->
+            <div class="hero-visual">
+                <div class="glass-card abstract-card card-1"><i class="fa-solid fa-cloud"></i> Serverless</div>
+                <div class="glass-card abstract-card card-2"><i class="fa-solid fa-microchip"></i> AI Automation</div>
+                <div class="glass-card abstract-card card-3"><i class="fa-solid fa-code"></i> Dev Tools</div>
             </div>
         </section>
 
-        <section class="featured" id="blueprints">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Latest Blueprints</h2>
+        <!-- Featured Categories -->
+        <section id="categories" class="container section-padding">
+            <div class="section-header">
+                <h2>Explore the Stack</h2>
+                <p>Browse elite tools by category.</p>
+            </div>
+            <div class="category-grid">
+                <a href="blog.html?cat=saas" class="cat-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>SaaS Tools</h3>
+                </a>
+                <a href="blog.html?cat=hosting" class="cat-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Web Hosting</h3>
+                </a>
+                <a href="blog.html?cat=ai" class="cat-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI Software</h3>
+                </a>
+                <a href="blog.html?cat=assets" class="cat-card">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h3>Digital Assets</h3>
+                </a>
+                <a href="blog.html?cat=productivity" class="cat-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Productivity</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Top Recommended Affiliate Dashboard -->
+        <section id="recommended" class="container section-padding">
+            <div class="section-header">
+                <h2>Top Recommended Software</h2>
+                <p>Vetted tools for enterprise scaling. (Click below to read reviews or get deals)</p>
+            </div>
+            <div class="affiliate-grid">
+                <!-- Affiliate Card Template 1 -->
+                <div class="affiliate-card glass-panel">
+                    <div class="card-tag best-overall">Editor's Choice</div>
+                    <div class="tool-logo"><i class="fa-brands fa-aws fa-3x"></i></div>
+                    <h3>Cloud Infrastructure</h3>
+                    <div class="rating">★★★★★ <span>4.9/5</span></div>
+                    <ul class="pros-list">
+                        <li><i class="fa-solid fa-check text-green"></i> Highest scalability</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Edge network routing</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="posts/template.html" class="btn-outline">Read Review</a>
+                        <a href="#" class="btn-primary affiliate-btn">Get Started &rarr;</a>
+                    </div>
                 </div>
-                <div class="article-grid">
-                    <div class="article-card">
-                        <div class="card-image-wrapper">
-                            <img src="storefront.png" alt="Digital Storefront Blueprint" class="card-image">
-                        </div>
-                        <div class="card-body">
-                            <span class="category">Expert Guide</span>
-                            <h3>The $1M Storefront Blueprint</h3>
-                            <p>How to architect high-yield e-commerce assets using enterprise-grade commerce engines.
-                            </p>
-                            <a href="posts/shopify-vs-bigcommerce.html" class="read-more">View Workflow &rarr;</a>
-                        </div>
-                    </div>
 
-                    <div class="article-card">
-                        <div class="card-image-wrapper">
-                            <img src="algorithm.png" alt="AI Wealth Algorithm" class="card-image">
-                        </div>
-                        <div class="card-body">
-                            <span class="category">Automation</span>
-                            <h3>The AI Wealth Algorithm</h3>
-                            <p>Leveraging systematic automation and all-in-one protocols to create exponential recurring
-                                income.</p>
-                            <a href="posts/cornerstone-guide.html" class="read-more">View Workflow &rarr;</a>
-                        </div>
+                <!-- Affiliate Card Template 2 -->
+                <div class="affiliate-card glass-panel">
+                    <div class="card-tag best-value">Best Value</div>
+                    <div class="tool-logo"><i class="fa-solid fa-robot fa-3x"></i></div>
+                    <h3>AI Writing Assistant</h3>
+                    <div class="rating">★★★★☆ <span>4.7/5</span></div>
+                    <ul class="pros-list">
+                        <li><i class="fa-solid fa-check text-green"></i> SEO optimization built-in</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Bulk content generation</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="posts/template.html" class="btn-outline">Read Review</a>
+                        <a href="#" class="btn-primary affiliate-btn">Get Started &rarr;</a>
                     </div>
+                </div>
 
-                    <div class="article-card">
-                        <div class="card-image-wrapper">
-                            <img src="stack.png" alt="High-Yield Performance Stack" class="card-image">
-                        </div>
-                        <div class="card-body">
-                            <span class="category">Blueprint</span>
-                            <h3>The 2026 Performance Stack</h3>
-                            <p>The core infrastructure needed to secure digital assets and maximize ROI in a
-                                decentralized world.</p>
-                            <a href="posts/tech-stack-2026.html" class="read-more">View Workflow &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="article-card">
-                        <div class="card-image-wrapper">
-                            <img src="yield.png" alt="Revenue Blueprint" class="card-image">
-                        </div>
-                        <div class="card-body">
-                            <span class="category">Strategy</span>
-                            <h3>The 2026 Yield Blueprint</h3>
-                            <p>Transforming enterprise software into passive cash flow with zero upfront capital
-                                requirements.</p>
-                            <a href="posts/affiliate-blueprint.html" class="read-more">View Workflow &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="article-card">
-                        <div class="card-image-wrapper">
-                            <img src="talent.png" alt="Talent Protocol" class="card-image">
-                        </div>
-                        <div class="card-body">
-                            <span class="category">Operations</span>
-                            <h3>The Virtual Talent Protocol</h3>
-                            <p>Automate your operations by deploying vetted elite talent through decentralized networks.
-                            </p>
-                            <a href="posts/fiverr-pro-guide.html" class="read-more">View Workflow &rarr;</a>
-                        </div>
+                <!-- Affiliate Card Template 3 -->
+                <div class="affiliate-card glass-panel">
+                    <div class="tool-logo"><i class="fa-solid fa-database fa-3x"></i></div>
+                    <h3>Managed Cloud DB</h3>
+                    <div class="rating">★★★★☆ <span>4.8/5</span></div>
+                    <ul class="pros-list">
+                        <li><i class="fa-solid fa-check text-green"></i> Automated backups</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Zero-downtime scaling</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="posts/template.html" class="btn-outline">Read Review</a>
+                        <a href="#" class="btn-primary affiliate-btn">Get Started &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="newsletter">
-            <div class="container">
-                <div class="newsletter-card">
-                    <h2>Join the Syndicate</h2>
-                    <p>Proprietary automation strategies and high-yield blueprints delivered weekly.</p>
-                    <form action="https://formsubmit.co/techstackglobal9@gmail.com" method="POST"
-                        class="newsletter-form">
-                        <input type="email" name="email" placeholder="Enter your professional email" required>
-                        <button type="submit">Join Now</button>
-                        <input type="hidden" name="_next" value="https://techstackglobal.github.io/">
+        <!-- Latest Articles -->
+        <section id="latest-posts" class="container section-padding">
+            <div class="section-header">
+                <h2>Latest Intelligence</h2>
+                <p>Deep dives into the tech stacks that power modern B2B uncorns.</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Articles will be generated individually later, placing placeholders -->
+                <div class="blog-card glass-panel">
+                    <div class="blog-category">Web Hosting</div>
+                    <h3><a href="posts/template.html">The Ultimate Guide to Edge Computing in 2026</a></h3>
+                    <p>Why traditional web hosting is dying and how edge networks will change latency forever.</p>
+                    <a href="posts/template.html" class="read-more">Read Article &rarr;</a>
+                </div>
+                <div class="blog-card glass-panel">
+                    <div class="blog-category">SaaS Tools</div>
+                    <h3><a href="posts/template.html">CRM Showdown: Which Scales Best?</a></h3>
+                    <p>An in-depth comparison of the top 3 B2B CRM platforms based on API flexibility and cost.</p>
+                    <a href="posts/template.html" class="read-more">Read Article &rarr;</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="blog.html" class="btn-outline">View All Articles</a>
+            </div>
+        </section>
+
+        <!-- Lead Capture / Newsletter -->
+        <section class="newsletter-section section-padding">
+            <div class="container glass-panel newsletter-box">
+                <div class="newsletter-content">
+                    <h2>Join 10,000+ Tech Founders</h2>
+                    <p>Get exclusive SaaS deals, tech stack breakdowns, and affiliate reviews delivered weekly.</p>
+                    <form action="https://formsubmit.co/your-email@example.com" method="POST" class="email-form">
+                        <input type="email" name="email" placeholder="Enter your business email" required>
+                        <input type="hidden" name="_next" value="https://techstackglobal.github.io/b2b_blog/">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="btn-primary">Subscribe Now</button>
                     </form>
+                    <p class="spam-notice">No spam. Unsubscribe anytime.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="glass-footer">
         <div class="container footer-content">
-            <div class="footer-info">
-                <div class="logo">TechStack<span>Global</span></div>
-                <p>&copy; 2026 Wealth & Automation Insights. All rights reserved.</p>
+            <div class="footer-brand">
+                <h3>TechStack<span class="accent">Global</span></h3>
+                <p>The definitive guide to elite B2B tech platforms.</p>
             </div>
-            <ul class="footer-links">
-                <li><a href="posts/contact.html">Contact</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-            </ul>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> TechStack Global. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Three.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 
