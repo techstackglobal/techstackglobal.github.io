@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStack Global | Wealth & Automation Blueprint 2026</title>
+    <title>TechStack Global | 3D Interactive & WebGL Experiences</title>
     <meta name="description"
-        content="The elite B2B authority platform for business automation, high-ticket affiliate strategies, and enterprise scaling in 2026.">
+        content="The elite platform for zero-cost 3D modeling, real-time physics, material layers, and interactive web experiences.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.png">
@@ -29,12 +29,14 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Wealth Engineering<br>Through 2026 Automation</h1>
-                <p>Decoding the high-yield tech stacks and autonomous blueprints that drive multi-generational revenue.
+        <section class="hero" id="home">
+            <canvas id="canvas3d"></canvas>
+            <div class="container hero-content">
+                <h1>Parametric Objects &<br>Interactive 3D Engineering</h1>
+                <p>Mastering polygonal editing, real-time physics simulations, and material layers for next-level visual
+                    experiences at zero cost.
                 </p>
-                <a href="#blueprints" class="btn-primary">Aquire Blueprints</a>
+                <a href="#blueprints" class="btn-primary">Explore Workflows</a>
             </div>
         </section>
 
@@ -140,7 +142,12 @@
                 <li><a href="#">Terms</a></li>
             </ul>
         </div>
+        </div>
     </footer>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
