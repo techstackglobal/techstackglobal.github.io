@@ -356,6 +356,38 @@ nav {
     cursor: pointer;
 }
 
+/* Partners Section */
+.partners {
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.partners p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 2rem;
+}
+
+.partner-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.p-logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     #hero {
