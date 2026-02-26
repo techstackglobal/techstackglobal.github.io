@@ -973,3 +973,24 @@ img {
        display: none; /* Hide abstract elements on very small screens to save space */
     }
 }
+
+/* Additional Mobile Fix for Navigation */
+@media screen and (max-width: 768px) {
+    nav.container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .hero {
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
