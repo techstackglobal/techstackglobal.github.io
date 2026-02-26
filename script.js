@@ -13,3 +13,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/**
+ * Affiliate & Tracking Helpers
+ */
+function buildAffiliateLink(url, campaign) {
+    try {
+        // If URL already has ?, append with &, else with ?
+        var separator = url.indexOf('?') !== -1 ? '&' : '?';
+        // Build utm string
+        var utm = 'utm_source=techstackglobal&utm_medium=affiliate&utm_campaign=' + encodeURIComponent(campaign);
+        return url + separator + utm;
+    } catch (e) {
+        return url;
+    }
+}
+
+function trackAffiliateClick(productShortName) {
+    console.log('Tracking affiliate click for:', productShortName);
+    // For gtag / GA4
+    if (window.gtag) {
+        gtag('event', 'affiliate_click', {
+            'event_category': 'affiliate',
+            'event_label': productShortName
+        });
+    }
+    // If using dataLayer:
+    if (window.dataLayer) {
+        window.dataLayer.push({
+            'event': 'affiliate_click',
+            'product': productShortName
+        });
+    }
+}

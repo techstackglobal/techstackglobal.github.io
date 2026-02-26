@@ -1,0 +1,38 @@
+# Foundational Business & Monetization Implementation Plan
+
+This plan outlines the technical steps to transform TechStack Global from a technical project into a revenue-generating affiliate business by implementing legal compliance, advanced tracking, and high-conversion UI components.
+
+## Proposed Changes
+
+### Legal & Compliance Infrastructure
+- [NEW] `privacy-policy.html` and `terms-of-service.html` with business-appropriate legal text.
+- [MODIFY] [index.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/index.html), [blog.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/blog.html), [about.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/about.html), [contact.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/contact.html), and all posts to include the global affiliate notice snippet directly below the navigation.
+- [MODIFY] [index.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/index.html) footer to link to new legal pages.
+
+### Conversion Optimization (CRO)
+- [MODIFY] [index.html](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/index.html): Replace the "Latest Intelligence" / "Recommended" sections with a high-conversion 4-column "Top Tools" comparison grid.
+- [MODIFY] [script.js](file:///c:/Users/PMLS/Desktop/Youtube%20Shorts/b2b_blog/script.js): Add `buildAffiliateLink` (UTM builder) and `trackAffiliateClick` (GA4 event) helper functions.
+
+### Link Monetization
+- Update Amazon affiliate links with `rel="sponsored"`, `target="_blank"`, and specific UTM parameters (`utm_source=techstackglobal&utm_medium=affiliate&utm_campaign=...`).
+
+---
+
+## Technical Details
+
+### Tracking Logic
+- Append `&utm_source=techstackglobal&utm_medium=affiliate&utm_campaign=top_tools_home` to Amazon links.
+- GA4 event: `affiliate_click` with `product` and `location` labels.
+
+### Styling Integration
+- The `#site-affiliate-notice` will use `background: #0f1724` to match the dark theme while providing clear contrast for legal visibility.
+- The "Top Tools" grid will use existing `glass-panel` and `btn-primary` classes to maintain brand consistency.
+
+---
+
+## Verification Plan
+
+### Automated/Manual Checks
+- **Link Audit**: Click every CTA in the "Top Tools" grid and verify the final URL contains the correct tags and UTMs.
+- **Legal Compliance**: Ensure the disclosure notice appears on every page load across mobile and desktop.
+- **Console Check**: Verify `trackAffiliateClick` doesn't throw errors when Google Analytics is not yet fully initialized on the user's end (graceful degradation).

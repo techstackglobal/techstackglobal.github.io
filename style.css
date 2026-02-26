@@ -358,6 +358,11 @@ img {
     padding: 2rem 1rem;
     text-align: center;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
 }
 
 .cat-card i {
@@ -366,10 +371,105 @@ img {
     margin-bottom: 1rem;
 }
 
+.cat-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cat-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
 .cat-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.featured-cat {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), var(--bg-dark));
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-cat::after {
+    content: 'TOP STACK';
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    background: var(--accent);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 900;
+    padding: 2px 30px;
+    transform: rotate(45deg);
+}
+
+.placeholder-cat {
+    opacity: 0.6;
+    cursor: default;
+    background: rgba(255, 255, 255, 0.02);
+    border-style: dashed;
+}
+
+.placeholder-cat:hover {
+    transform: none;
+    border-color: var(--border-glass);
+    box-shadow: none;
+}
+
+.badge-mini {
+    font-size: 0.65rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Trust Signals & Logos */
+.trust-strip {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.testimonial-mini {
+    background: var(--bg-dark);
+    border-left: 3px solid var(--accent);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    flex: 1;
+}
+
+.testimonial-user {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--accent);
+}
+
+.grayscale-logos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    opacity: 0.4;
+    filter: grayscale(1);
+    margin-top: 2rem;
+}
+
+.grayscale-logos span {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 /* Affiliate/Recommended Tools Grid */
