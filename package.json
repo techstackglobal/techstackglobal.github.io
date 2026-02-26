@@ -1,0 +1,22 @@
+{
+  "name": "techstack-global-blog",
+  "version": "1.0.0",
+  "description": "The elite B2B authority platform for SaaS tools, web hosting, AI technology, and digital assets.",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.html, *.css, *.js, posts/*.html\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "b2b",
+    "blog",
+    "saas",
+    "techstack",
+    "affiliate"
+  ],
+  "author": "TechStack Global",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.0"
+  }
+}
