@@ -19,25 +19,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/techstack-logo-192.png">
-    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/techstack-logo-192.png">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
 </head>
 
 <body class="dark-theme">
     <div class="ambient-grid"></div>
     <header class="glass-header">
         <nav class="container">
-            <div class="logo"><a href="/index.html">TechStack<span class="accent">Global</span></a></div>
+            <div class="logo"><a href="index.html">TechStack<span class="accent">Global</span></a></div>
             <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/blog.html" class="active">Software Reviews</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Software Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,48 +51,62 @@
     <main class="container section-padding" style="margin-top: 80px;">
         <div class="section-header">
             <h1>Tech Stack Reviews & Guides</h1>
-            <p>Filter by category to find the exact tools your business needs.</p>
-        </div>
-
-        <div class="category-grid" style="margin-bottom: 3rem;">
-            <a href="/blog.html?cat=saas" class="cat-card">
-                <h3>SaaS Tools</h3>
-            </a>
-            <a href="/blog.html?cat=hosting" class="cat-card">
-                <h3>Web Hosting</h3>
-            </a>
-            <a href="/blog.html?cat=ai" class="cat-card">
-                <h3>AI Software</h3>
-            </a>
-            <a href="/blog.html?cat=assets" class="cat-card">
-                <h3>Digital Assets</h3>
-            </a>
-            <a href="/blog.html?cat=productivity" class="cat-card">
-                <h3>Productivity</h3>
-            </a>
+            <p>Curated tech analysis for students, freelancers, and growing teams.</p>
         </div>
 
         <div class="blog-grid" id="blog-posts-container">
+            <!-- New Student Posts First for Volume -->
             <div class="blog-card glass-panel">
-                <div class="blog-category">Developer Hardware</div>
-                <h3><a href="/posts/apple-macbook-pro-m4-pro-review.html">Apple MacBook Pro M4 Pro Review (2026)</a>
-                </h3>
-                <p>The ultimate portable workstation for running AI models locally and maintaining peak efficiency.</p>
-                <a href="/posts/apple-macbook-pro-m4-pro-review.html" class="read-more">Read Review &rarr;</a>
+                <div class="blog-category">Student Tech</div>
+                <h3><a href="posts/best-laptops-for-students-2026.html">Best Laptops for Students 2026</a></h3>
+                <p>The definitive guide to balancing performance with a student budget. From M1 Airs to Chromebooks.</p>
+                <a href="posts/best-laptops-for-students-2026.html" class="read-more">Read Guide &rarr;</a>
             </div>
+
             <div class="blog-card glass-panel">
-                <div class="blog-category">Developer Hardware</div>
-                <h3><a href="/posts/dell-xps-15-9530-review.html">Dell XPS 15 9530: Elite Windows Dev Machine</a></h3>
-                <p>The premium Intel Evo platform built for compiling heavy .NET frameworks and Docker virtualization.
+                <div class="blog-category">Budget Picks</div>
+                <h3><a href="posts/budget-laptops-under-1000.html">Best Laptops Under $1000 (2026 Picks)</a></h3>
+                <p>Elite performance without the sticker shock. We pick the machines with the best ROI for freelancers.
                 </p>
-                <a href="/posts/dell-xps-15-9530-review.html" class="read-more">Read Review &rarr;</a>
+                <a href="posts/budget-laptops-under-1000.html" class="read-more">Read Guide &rarr;</a>
             </div>
+
+            <div class="blog-card glass-panel">
+                <div class="blog-category">Study Setup</div>
+                <h3><a href="posts/best-headphones-for-classes.html">Best Headphones for Online Classes</a></h3>
+                <p>Focus and clarity. Vetted noise-cancelling picks for libraries and busy remote work environments.</p>
+                <a href="posts/best-headphones-for-classes.html" class="read-more">Read Guide &rarr;</a>
+            </div>
+
+            <!-- Flagship Reviews -->
+            <div class="blog-card glass-panel">
+                <div class="blog-category">Storage & Upgrades</div>
+                <h3><a href="posts/samsung-990-pro-ssd-review.html">Samsung 990 PRO SSD 2TB Review</a></h3>
+                <p>The ultimate high-speed upgrade for content creators, heavy multitaskers, and freelancers.</p>
+                <a href="posts/samsung-990-pro-ssd-review.html" class="read-more">Read Review &rarr;</a>
+            </div>
+
+            <div class="blog-card glass-panel">
+                <div class="blog-category">Premium Performance</div>
+                <h3><a href="posts/apple-macbook-pro-m4-pro-review.html">Apple MacBook Pro M4 Pro Review</a></h3>
+                <p>The ultimate powerhouse for creative professionals, researchers, and elite business growth.</p>
+                <a href="posts/apple-macbook-pro-m4-pro-review.html" class="read-more">Read Review &rarr;</a>
+            </div>
+
+            <div class="blog-card glass-panel">
+                <div class="blog-category">Windows Workstation</div>
+                <h3><a href="posts/dell-xps-15-9530-review.html">Dell XPS 15 9530: Premium Windows Machine</a></h3>
+                <p>A flagship experience with user-upgradeable parts, perfect for researchers and long-term career
+                    growth.</p>
+                <a href="posts/dell-xps-15-9530-review.html" class="read-more">Read Review &rarr;</a>
+            </div>
+
             <div class="blog-card glass-panel">
                 <div class="blog-category">Productivity Tech</div>
-                <h3><a href="/posts/surface-laptop-studio-2-review.html">Microsoft Surface Laptop Studio 2 Review</a>
+                <h3><a href="posts/surface-laptop-studio-2-review.html">Microsoft Surface Laptop Studio 2 Review</a>
                 </h3>
-                <p>An agile hybrid machine enabling seamless transition from local dev to boardroom presentations.</p>
-                <a href="/posts/surface-laptop-studio-2-review.html" class="read-more">Read Review &rarr;</a>
+                <p>An agile hybrid machine that transforms from a powerful typing laptop to a creative canvas.</p>
+                <a href="posts/surface-laptop-studio-2-review.html" class="read-more">Read Review &rarr;</a>
             </div>
         </div>
     </main>
@@ -100,22 +114,23 @@
     <footer class="glass-footer" style="margin-top: 6rem;">
         <div class="container footer-content">
             <div class="footer-brand">
-                <h3>TechStack<span class="accent">Global</span></h3>
-                <p>The definitive guide to elite B2B tech platforms.</p>
+                <h3><a href="index.html" style="text-decoration: none; color: inherit;">TechStack<span
+                            class="accent">Global</span></a></h3>
+                <p>Curating the best tech for modern work and growth.</p>
             </div>
             <div class="footer-links">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
-                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="/terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -123,7 +138,7 @@
             <p>&copy; <span id="year">2026</span> TechStack Global. All rights reserved.</p>
         </div>
     </footer>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
