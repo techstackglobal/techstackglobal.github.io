@@ -3,13 +3,46 @@ document.addEventListener('DOMContentLoaded', () => {
     // Current Year for Footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        const toggleMenu = (state) => {
+            const isActive = state !== undefined ? state : !navLinks.classList.contains('active');
+            navLinks.classList.toggle('active', isActive);
+            const icon = menuToggle.querySelector('i');
+            icon.classList.replace(isActive ? 'fa-bars' : 'fa-xmark', isActive ? 'fa-xmark' : 'fa-bars');
+        };
+
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                toggleMenu(false);
+            }
+        });
+    }
+
     // Smooth scrolling for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });

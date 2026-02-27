@@ -43,7 +43,10 @@
     <header class="glass-header">
         <nav class="container">
             <div class="logo"><a href="index.html">TechStack<span class="accent">Global</span></a></div>
-                        <ul class="nav-links">
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="amazon-stack.html" class="active">Amazon Stack</a></li>
                 <li><a href="blog.html">Guides</a></li>
@@ -61,75 +64,106 @@
 
     <main class="container section-padding">
         <header class="section-header">
-            <span class="badge">Amazon Associate Stack</span>
-            <h1>Tech Hardware for <span class="gradient-text">Modern Work & Growth</span></h1>
-            <p>Inclusive guides for students, freelancers, and remote teams.</p>
+            <h1>The Amazon Stack</h1>
         </header>
 
         <section class="stack-subcategory" style="margin-bottom: 4rem;">
             <h2
                 style="margin-bottom: 0.5rem; border-bottom: 1px solid var(--accent); display: inline-block; padding-bottom: 5px;">
-                🏠 Remote Work & Productivity Setup
+                Product Library
             </h2>
             <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 800px;">
-                Our fully vetted, core hardware stack designed to build a unified, high-performance home office. From
-                powerful laptops to essential infrastructure, this is the productivity ecosystem of 2026.
+                Hardware chosen for performance, reliability, and practical daily use.
             </p>
-            <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
                 <!-- MacBook Pro -->
-                <div class="blog-card glass-panel" style="border-top: 3px solid var(--accent);">
-                    <div class="blog-category">Premium Laptop</div>
-                    <h3><a href="posts/apple-macbook-pro-m4-pro-review.html">Apple MacBook Pro M4 Pro</a></h3>
-                    <p>The efficiency benchmark for AI engineers and mobile operators. 20+ hours of battery life.</p>
-                    <div class="card-meta"><span>9.8/10</span> <a href="posts/apple-macbook-pro-m4-pro-review.html"
-                            class="read-more">Full Analysis &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="assets/images/macbook_hero.jpg" alt="Apple MacBook Pro M4 Pro — product thumbnail"
+                            class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">Elite Performance</div>
+                        <h3><a href="posts/apple-macbook-pro-m4-pro-review.html"
+                                aria-label="Open review: Apple MacBook Pro M4 Pro">Apple MacBook Pro M4 Pro</a></h3>
+                        <a href="posts/apple-macbook-pro-m4-pro-review.html" class="view-review-cta">View Review <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Dell XPS 15 -->
-                <div class="blog-card glass-panel" style="border-top: 3px solid #00c3ff;">
-                    <div class="blog-category">Enterprise Laptop</div>
-                    <h3><a href="posts/dell-xps-15-9530-review.html">Dell XPS 15 9530</a></h3>
-                    <p>The premier Windows workstation with upgradeable RAM and classic enterprise build quality.</p>
-                    <div class="card-meta"><span>9.4/10</span> <a href="posts/dell-xps-15-9530-review.html"
-                            class="read-more">Full Analysis &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/61Ks9X44eVL._AC_SL1181_.jpg"
+                            alt="Dell XPS 15 9530 — product thumbnail" class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">Enterprise Windows</div>
+                        <h3><a href="posts/dell-xps-15-9530-review.html" aria-label="Open review: Dell XPS 15 9530">Dell
+                                XPS 15 9530</a></h3>
+                        <a href="posts/dell-xps-15-9530-review.html" class="view-review-cta">View Review <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Surface Laptop Studio 2 -->
-                <div class="blog-card glass-panel" style="border-top: 3px solid #ff4b2b;">
-                    <div class="blog-category">Creative Laptop</div>
-                    <h3><a href="posts/surface-laptop-studio-2-review.html">Surface Laptop Studio 2</a></h3>
-                    <p>The ultimate agile workstation for product managers and digital artists with a floating display.
-                    </p>
-                    <div class="card-meta"><span>9.2/10</span> <a href="posts/surface-laptop-studio-2-review.html"
-                            class="read-more">Full Analysis &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/61LMopCIyTL._AC_SL1200_.jpg"
+                            alt="Surface Laptop Studio 2 — product thumbnail" class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">Creative Hybrid</div>
+                        <h3><a href="posts/surface-laptop-studio-2-review.html"
+                                aria-label="Open review: Surface Laptop Studio 2">Surface Laptop Studio 2</a></h3>
+                        <a href="posts/surface-laptop-studio-2-review.html" class="view-review-cta">View Review <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Samsung SSD -->
-                <div class="blog-card glass-panel">
-                    <div class="blog-category">High-Speed Storage</div>
-                    <h3><a href="posts/samsung-990-pro-ssd-review.html">Samsung 990 PRO SSD 2TB</a></h3>
-                    <p>The premier NVMe upgrade for content creators, hitting 7,450 MB/s to eliminate loading times.</p>
-                    <div class="card-meta"><span>9.8/10</span> <a href="posts/samsung-990-pro-ssd-review.html"
-                            class="read-more">Full Analysis &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/P/B0BHJJ9Y77.01._SCLZZZZZZZ_.jpg"
+                            alt="Samsung 990 PRO SSD 2TB — product thumbnail" class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">High-Speed Storage</div>
+                        <h3><a href="posts/samsung-990-pro-ssd-review.html"
+                                aria-label="Open review: Samsung 990 PRO SSD 2TB">Samsung 990 PRO SSD 2TB</a></h3>
+                        <a href="posts/samsung-990-pro-ssd-review.html" class="view-review-cta">View Review <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- LG Monitor -->
-                <div class="blog-card glass-panel">
-                    <div class="blog-category">4K Display</div>
-                    <h3><a href="posts/lg-27us500-w-ultrafine-monitor-review.html">LG 27US500-W 4K Monitor</a></h3>
-                    <p>Expand your workspace and reduce eye strain with stunning retina-level 4K text clarity.</p>
-                    <div class="card-meta"><span>9.3/10</span> <a
-                            href="posts/lg-27us500-w-ultrafine-monitor-review.html" class="read-more">Full Analysis
-                            &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/71R-r8EAn2L._AC_SL1500_.jpg"
+                            alt="LG 27US500-W 4K Monitor — product thumbnail" class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">4K Productivity</div>
+                        <h3><a href="posts/lg-27us500-w-ultrafine-monitor-review.html"
+                                aria-label="Open review: LG 27US500-W 4K Monitor">LG 27US500-W 4K Monitor</a></h3>
+                        <a href="posts/lg-27us500-w-ultrafine-monitor-review.html" class="view-review-cta">View Review
+                            <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Dell Dock -->
-                <div class="blog-card glass-panel">
-                    <div class="blog-category">Thunderbolt Hub</div>
-                    <h3><a href="posts/dell-thunderbolt-smart-dock-review.html">Dell SD25TB4 Pro Dock</a></h3>
-                    <p>The core of a one-cable desk setup, providing massive bandwidth and 130W laptop charging.</p>
-                    <div class="card-meta"><span>9.6/10</span> <a href="posts/dell-thunderbolt-smart-dock-review.html"
-                            class="read-more">Full Analysis &rarr;</a></div>
+                <div class="product-item glass-panel">
+                    <div class="product-thumbnail-wrapper">
+                        <img src="assets/images/products/dell-sd25tb4-box.jpg"
+                            alt="Dell SD25TB4 Pro Dock — product thumbnail" class="product-thumbnail" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">Thunderbolt Hub</div>
+                        <h3><a href="posts/dell-thunderbolt-smart-dock-review.html"
+                                aria-label="Open review: Dell SD25TB4 Pro Dock">Dell SD25TB4 Pro Dock</a></h3>
+                        <a href="posts/dell-thunderbolt-smart-dock-review.html" class="view-review-cta">View Review <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>

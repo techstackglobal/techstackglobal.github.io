@@ -2,10 +2,13 @@ import os
 import glob
 import re
 
-nav_pattern = re.compile(r'<ul class="nav-links">.*?</ul>', re.DOTALL)
+nav_pattern = re.compile(r'<ul class="nav-links"[^>]*>.*?</ul>', re.DOTALL)
 
 def update_nav(directory, prefix=""):
-    new_nav = f"""            <ul class="nav-links">
+    new_nav = f"""            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="{prefix}index.html">Home</a></li>
                 <li><a href="{prefix}amazon-stack.html">Amazon Stack</a></li>
                 <li><a href="{prefix}blog.html">Guides</a></li>
