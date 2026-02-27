@@ -1,7 +1,8 @@
 // Minimal JS for interactions (No 3D canvas libraries)
 document.addEventListener('DOMContentLoaded', () => {
     // Current Year for Footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
