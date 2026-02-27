@@ -1,5 +1,0 @@
-# CODEOWNERS
-
-# Require owner review and approval for any changes to product review posts.
-posts/*.html @TechStackGlobalOwner
-posts/template.html @TechStackGlobalOwner
