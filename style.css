@@ -939,17 +939,48 @@ h1.post-title,
     margin-bottom: 1.5rem;
 }
 
-/* Updated Disclaimer */
-.affiliate-disclaimer {
+.affiliate-disclaimer,
+.affiliate-disclosure {
     font-size: 0.85rem;
     color: var(--text-secondary);
-    padding: 1.5rem;
-    background: rgba(59, 130, 246, 0.05);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
     border-left: 3px solid var(--accent);
     border-radius: 8px;
     margin-bottom: 2.5rem;
     line-height: 1.5;
 }
+
+.table-responsive {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bundle-cta {
+    background: #fff;
+    color: #111;
+}
+
+.bundle-cta h3 {
+    color: #111;
+    margin-top: 0;
+}
+
+.bundle-cta li {
+    color: #333;
+}
+
+.bundle-cta .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
 
 .pros-cons-grid {
     display: grid;
