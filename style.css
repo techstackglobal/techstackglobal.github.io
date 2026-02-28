@@ -1583,10 +1583,13 @@ h1.post-title,
 
     /* Fixed Header Adjustments - Super Slim */
     .glass-header nav {
+        display: flex !important;
+        /* CRITICAL: Override .container display: block */
+        flex-direction: row !important;
         justify-content: space-between !important;
-        /* Restore side-by-side */
+        align-items: center !important;
         gap: 0.5rem !important;
-        padding: 0.25rem 1.25rem !important;
+        padding: 0.35rem 1.25rem !important;
         /* Absolute minimum padding */
     }
 
@@ -1594,6 +1597,7 @@ h1.post-title,
         font-size: 1.4rem !important;
         order: -1 !important;
         /* Logo on left */
+        flex-shrink: 0;
     }
 
     .menu-toggle {
@@ -1601,25 +1605,30 @@ h1.post-title,
         align-items: center;
         justify-content: center;
         order: 1 !important;
-        /* Toggle back to right */
-        padding: 0.25rem 0.5rem !important;
-        font-size: 0.9rem !important;
+        /* Toggle ALWAYS on the right */
+        padding: 0.3rem 0.6rem !important;
+        font-size: 1rem !important;
+        flex-shrink: 0;
     }
 
     /* Affiliate notice needs to clear slimmer fixed header */
     #site-affiliate-notice {
-        margin-top: 36px !important;
-        /* Adjusted for super slim header */
+        margin-top: 40px !important;
+        /* Matches slimmer header */
         width: 100% !important;
         box-sizing: border-box !important;
-        padding: 6px 1rem !important;
+        padding: 8px 1.25rem !important;
+        font-size: 12px !important;
     }
 
-    .affiliate-disclaimer {
+    .affiliate-disclaimer,
+    .glass-card,
+    .glass-panel {
         margin: 1.5rem 0 !important;
         width: 100% !important;
+        max-width: 100% !important;
         box-sizing: border-box !important;
-        padding: 1rem !important;
+        padding: 1.25rem !important;
     }
 
     /* Post Content & Body Fixes - Solve the "3-4 word wrap" issue */
@@ -1707,9 +1716,9 @@ h1.post-title,
     }
 
     .comparison-table {
-        min-width: 500px !important;
-        /* Enough room to avoid squishing */
-        font-size: 0.85rem !important;
+        min-width: 100% !important;
+        /* Allow collapse to screen width */
+        font-size: 0.8rem !important;
     }
 
     .comparison-table th,
