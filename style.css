@@ -1563,8 +1563,9 @@ h1.post-title,
     /* Main Layout Containers */
     .container,
     .article-container {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+        padding-left: 1.25rem !important;
+        /* Slightly more air on edges */
+        padding-right: 1.25rem !important;
         width: 100% !important;
         box-sizing: border-box !important;
         margin-top: 60px !important;
@@ -1572,10 +1573,34 @@ h1.post-title,
         display: block !important;
     }
 
+    /* Fixed Header Adjustments */
+    .glass-header nav {
+        justify-content: flex-start !important;
+        gap: 1rem !important;
+        padding: 0.8rem 1.25rem !important;
+        /* Tighter vertical, consistent horizontal */
+    }
+
+    .logo {
+        font-size: 1.1rem !important;
+        /* Smaller logo for mobile */
+        order: 0 !important;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        /* Ensure it shows as flex for centering icon */
+        align-items: center;
+        justify-content: center;
+        order: -1 !important;
+        /* Move toggle to the left */
+        padding: 0.4rem 0.6rem !important;
+        font-size: 1rem !important;
+    }
+
     /* Post Content & Body Fixes - Solve the "3-4 word wrap" issue */
     .post-body {
-        padding: 1.25rem 1rem !important;
-        /* Drastically reduced from 3rem */
+        padding: 1.25rem 0.85rem !important;
         border-radius: 8px !important;
         width: 100% !important;
     }
@@ -1602,6 +1627,7 @@ h1.post-title,
     .hero-sub {
         font-size: 1rem !important;
     }
+
 
     /* Mobile Text Sizes */
     h1.post-title,
