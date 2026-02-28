@@ -1312,7 +1312,8 @@ h1.post-title,
 
     .nav-links {
         position: fixed;
-        top: 52px;
+        top: 42px;
+        /* Slimmed to match header height */
         /* Matches the new measured header height */
         left: 0;
         right: 0;
@@ -1564,43 +1565,49 @@ h1.post-title,
     .container,
     .article-container {
         padding-left: 1.25rem !important;
-        /* Slightly more air on edges */
+        /* Ensure air on edges */
         padding-right: 1.25rem !important;
         width: 100% !important;
         box-sizing: border-box !important;
-        margin-top: 60px !important;
+        margin-top: 3rem !important;
+        /* Increased to ensure clearing on pages without notice */
         grid-template-columns: 1fr !important;
         display: block !important;
+    }
+
+    /* Affiliate notice needs to clear fixed header */
+    #site-affiliate-notice {
+        margin-top: 42px !important;
     }
 
     /* Fixed Header Adjustments */
     .glass-header nav {
         justify-content: flex-start !important;
         gap: 1rem !important;
-        padding: 0.8rem 1.25rem !important;
-        /* Tighter vertical, consistent horizontal */
+        padding: 0.45rem 1.25rem !important;
+        /* Slimmed down from 0.8rem to 0.45rem */
     }
 
     .logo {
-        font-size: 1.1rem !important;
-        /* Smaller logo for mobile */
+        font-size: 1.45rem !important;
+        /* Restored closer to its "perfect" size */
         order: 0 !important;
     }
 
     .menu-toggle {
         display: flex !important;
-        /* Ensure it shows as flex for centering icon */
         align-items: center;
         justify-content: center;
         order: -1 !important;
-        /* Move toggle to the left */
-        padding: 0.4rem 0.6rem !important;
+        /* Toggle stays on the left */
+        padding: 0.3rem 0.6rem !important;
         font-size: 1rem !important;
     }
 
     /* Post Content & Body Fixes - Solve the "3-4 word wrap" issue */
     .post-body {
-        padding: 1.25rem 0.85rem !important;
+        padding: 1.25rem 0 !important;
+        /* No side padding, handled by .article-container */
         border-radius: 8px !important;
         width: 100% !important;
     }
