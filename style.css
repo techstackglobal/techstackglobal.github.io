@@ -1665,3 +1665,72 @@ img {
         max-width: none;
     }
 }
+
+/* Mobile Typography Scale-Down — prevents vertical stretching */
+@media screen and (max-width: 768px) {
+
+    /* Hero section - biggest offender */
+    .hero h1 {
+        font-size: 2rem !important;
+        letter-spacing: -0.5px;
+        line-height: 1.2 !important;
+    }
+
+    .hero-sub {
+        font-size: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Section headings */
+    .section-header h1,
+    .section-header h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.25 !important;
+    }
+
+    /* Newsletter heading */
+    .newsletter-content h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Post title on review pages */
+    .post-title,
+    h1.post-title {
+        font-size: 1.6rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* H2 inside articles */
+    .post-body h2 {
+        font-size: 1.3rem !important;
+        margin-top: 1.75rem !important;
+        padding-top: 1.25rem !important;
+    }
+
+    /* H3 inside articles */
+    .post-body h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Reduce section spacing so page doesn't feel endless */
+    .section-padding {
+        padding: 2.5rem 0 !important;
+    }
+
+    /* Tighter margins between content blocks */
+    .post-body h2,
+    .post-body h3,
+    .post-body p,
+    .post-body ul,
+    .post-body ol {
+        margin-bottom: 1rem !important;
+    }
+
+    /* Card category badge font */
+    .blog-category,
+    .product-meta,
+    .badge {
+        font-size: 0.75rem !important;
+    }
+}
