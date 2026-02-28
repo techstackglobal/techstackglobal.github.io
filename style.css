@@ -263,7 +263,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 1.2rem 1.25rem;
 }
 
 .logo {
@@ -1561,5 +1561,73 @@ img {
     .comparison-table td {
         padding: 0.75rem 0.5rem !important;
         font-size: 0.9rem !important;
+    }
+}
+
+/* Additional Mobile Fixes for Product Reviews & Guides */
+@media screen and (max-width: 768px) {
+
+    /* Add breathing room to main containers */
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    /* Affiliate disclaimer full width */
+    .affiliate-disclaimer {
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+
+    /* About / Contact glass-panel inner padding fix */
+    .glass-panel {
+        padding: 1.75rem !important;
+    }
+
+    /* Product items in amazon stack */
+    .product-item {
+        flex-direction: column;
+    }
+
+    .product-thumbnail-wrapper {
+        width: 100% !important;
+    }
+
+    /* Force any inline 1fr 1fr grid to stack */
+    [style*="grid-template-columns: 1fr 1fr"],
+    [style*="grid-template-columns:1fr 1fr"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+
+    /* Affiliate CTA buttons full width on mobile */
+    .affiliate-btn,
+    .in-content-cta .btn-primary {
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Blog grid on guide pages */
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Sidebar hidden on mobile */
+    .sticky-sidebar {
+        display: none !important;
+    }
+
+    /* Readable body text */
+    .post-body p,
+    .post-body li {
+        font-size: 0.97rem !important;
+        line-height: 1.75;
+    }
+
+    /* Comparison table min-width ensures horizontal scroll works */
+    .comparison-table {
+        min-width: 480px;
     }
 }
