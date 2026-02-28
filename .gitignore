@@ -21,3 +21,10 @@ tmp/
 # Production build (if any)
 dist/
 build/
+
+# Secrets
+.env
+.env.example
+
+# App-specific temporary files
+claude_req.json
