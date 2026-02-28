@@ -1312,7 +1312,7 @@ h1.post-title,
 
     .nav-links {
         position: fixed;
-        top: 42px;
+        top: 36px;
         /* Slimmed to match header height */
         /* Matches the new measured header height */
         left: 0;
@@ -1577,31 +1577,49 @@ h1.post-title,
 
     /* Affiliate notice needs to clear fixed header */
     #site-affiliate-notice {
-        margin-top: 42px !important;
+        margin-top: 38px !important;
+        /* Matches new header height */
     }
 
-    /* Fixed Header Adjustments */
+    /* Fixed Header Adjustments - Super Slim */
     .glass-header nav {
-        justify-content: flex-start !important;
-        gap: 1rem !important;
-        padding: 0.45rem 1.25rem !important;
-        /* Slimmed down from 0.8rem to 0.45rem */
+        justify-content: space-between !important;
+        /* Restore side-by-side */
+        gap: 0.5rem !important;
+        padding: 0.25rem 1.25rem !important;
+        /* Absolute minimum padding */
     }
 
     .logo {
-        font-size: 1.45rem !important;
-        /* Restored closer to its "perfect" size */
-        order: 0 !important;
+        font-size: 1.4rem !important;
+        order: -1 !important;
+        /* Logo on left */
     }
 
     .menu-toggle {
         display: flex !important;
         align-items: center;
         justify-content: center;
-        order: -1 !important;
-        /* Toggle stays on the left */
-        padding: 0.3rem 0.6rem !important;
-        font-size: 1rem !important;
+        order: 1 !important;
+        /* Toggle back to right */
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Affiliate notice needs to clear slimmer fixed header */
+    #site-affiliate-notice {
+        margin-top: 36px !important;
+        /* Adjusted for super slim header */
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 6px 1rem !important;
+    }
+
+    .affiliate-disclaimer {
+        margin: 1.5rem 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 1rem !important;
     }
 
     /* Post Content & Body Fixes - Solve the "3-4 word wrap" issue */
