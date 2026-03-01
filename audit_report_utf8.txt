@@ -108,6 +108,18 @@ Viewport: OK
 Indexing: OK (Intentional Noindex)
 Broken Links: None
 --------------------------------
+PAGE: /posts/alienware-aw3423dwf-review.html
+Title: OK (Length: 62)
+Meta Description: OK (Length: 155)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
 PAGE: /posts/apple-macbook-pro-m4-pro-review.html
 Title: OK (Length: 57)
 Meta Description: OK (Length: 142)
@@ -313,10 +325,10 @@ Image Alt Text: OK
 
 
 === SITE RISK SUMMARY ===
-Total Pages Scanned: 25
+Total Pages Scanned: 26
 Pages With Critical Errors: 0
 Pages With Duplicate Meta: 0
 Pages With Duplicate Titles: 0
 Pages With Missing Schema: 0
 Pages With Missing Alt Text: 0
-Clean Pages: 25
+Clean Pages: 26
