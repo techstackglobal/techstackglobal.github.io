@@ -939,6 +939,22 @@ h1.post-title,
     margin-bottom: 1.5rem;
 }
 
+/* Inline body links — visually distinct cross-links and contextual anchors */
+.post-body p a,
+.post-body li a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.post-body p a:hover,
+.post-body li a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 .affiliate-disclaimer,
 .affiliate-disclosure {
     font-size: 0.85rem;
