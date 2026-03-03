@@ -1359,9 +1359,8 @@ h1.post-title,
 
     .nav-links {
         position: fixed;
-        top: 36px;
-        /* Slimmed to match header height */
-        /* Matches the new measured header height */
+        top: 52px;
+        /* Matches the header height to avoid overlap */
         left: 0;
         right: 0;
         bottom: auto;

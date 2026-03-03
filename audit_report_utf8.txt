@@ -84,6 +84,18 @@ Viewport: OK
 Indexing: OK
 Broken Links: None
 --------------------------------
+PAGE: /smart-tools.html
+Title: OK (Length: 53)
+Meta Description: OK (Length: 122)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
 PAGE: /terms-of-service.html
 Title: OK (Length: 35)
 Meta Description: OK (Length: 138)
@@ -120,6 +132,18 @@ Viewport: OK
 Indexing: OK
 Broken Links: None
 --------------------------------
+PAGE: /posts/alienware-aw3423dwf-vs-odyssey-g8.html
+Title: WARNING (Length: 86 > 70)
+Meta Description: OK (Length: 160)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
 PAGE: /posts/apple-macbook-pro-m4-pro-review.html
 Title: OK (Length: 57)
 Meta Description: OK (Length: 142)
@@ -144,6 +168,30 @@ Viewport: OK
 Indexing: OK
 Broken Links: None
 --------------------------------
+PAGE: /posts/best-noise-cancelling-headphones-2026.html
+Title: OK (Length: 39)
+Meta Description: OK (Length: 151)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-podcast-microphones-2026.html
+Title: OK (Length: 31)
+Meta Description: OK (Length: 134)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
 PAGE: /posts/best-premium-laptop-for-work-2026.html
 Title: OK (Length: 55)
 Meta Description: OK (Length: 173)
@@ -159,6 +207,30 @@ Broken Links: None
 PAGE: /posts/best-remote-work-setup-2026.html
 Title: OK (Length: 54)
 Meta Description: OK (Length: 155)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-ultrawide-monitors-2026.html
+Title: OK (Length: 30)
+Meta Description: OK (Length: 156)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/bose-qc-ultra-review.html
+Title: OK (Length: 66)
+Meta Description: OK (Length: 185)
 Canonical: OK
 OpenGraph: OK
 Twitter Card: OK
@@ -298,7 +370,7 @@ Schema: OK
 H1 Count: 1
 Viewport: OK
 Indexing: OK
-Broken Links: best-headphones-for-classes.html
+Broken Links: None
 --------------------------------
 PAGE: /posts/shure-sm7b-vs-sm7db.html
 Title: OK (Length: 50)
@@ -315,6 +387,30 @@ Broken Links: None
 PAGE: /posts/shure-sm7db-review.html
 Title: OK (Length: 65)
 Meta Description: OK (Length: 133)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/sony-wh-1000xm5-review.html
+Title: OK (Length: 62)
+Meta Description: OK (Length: 165)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/sony-xm5-vs-bose-qc-ultra.html
+Title: OK (Length: 49)
+Meta Description: OK (Length: 148)
 Canonical: OK
 OpenGraph: OK
 Twitter Card: OK
@@ -349,10 +445,10 @@ Image Alt Text: OK
 
 
 === SITE RISK SUMMARY ===
-Total Pages Scanned: 28
+Total Pages Scanned: 36
 Pages With Critical Errors: 0
 Pages With Duplicate Meta: 0
 Pages With Duplicate Titles: 0
 Pages With Missing Schema: 0
 Pages With Missing Alt Text: 0
-Clean Pages: 28
+Clean Pages: 36
