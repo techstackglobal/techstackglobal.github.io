@@ -274,7 +274,19 @@ Schema: OK
 H1 Count: 1
 Viewport: OK
 Indexing: OK
-Broken Links: images/odyssey-g8-front.jpg, images/odyssey-g8-back.jpg
+Broken Links: None
+--------------------------------
+PAGE: /posts/samsung-odyssey-g8-vs-alienware-aw3423dwf.html
+Title: OK (Length: 58)
+Meta Description: OK (Length: 152)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:image, og:url, og:type
+Twitter Card: MISSING TAGS: twitter:card, twitter:title, twitter:description, twitter:image
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
 --------------------------------
 PAGE: /posts/shure-sm7b-review.html
 Title: OK (Length: 59)
@@ -337,10 +349,10 @@ Image Alt Text: OK
 
 
 === SITE RISK SUMMARY ===
-Total Pages Scanned: 27
+Total Pages Scanned: 28
 Pages With Critical Errors: 0
 Pages With Duplicate Meta: 0
 Pages With Duplicate Titles: 0
 Pages With Missing Schema: 0
 Pages With Missing Alt Text: 0
-Clean Pages: 27
+Clean Pages: 28
