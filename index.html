@@ -139,7 +139,7 @@
             will-change: transform, opacity;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             /* Smooth transitions when dropping or clicking next */
-            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s linear;
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s linear;
           }
 
           .deck-card:active {
@@ -148,12 +148,16 @@
 
           .deck-card img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            height: 220px;
+            border-radius: 12px;
             margin-bottom: 1rem;
-            aspect-ratio: 16/9;
-            object-fit: cover;
+            object-fit: contain;
             pointer-events: none;
+            background: #ffffff;
+            /* White bg frame to make transparent/cutout images pop */
+            padding: 0.5rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            /* Slight inner depth styling */
           }
 
           .deck-card h3 {
