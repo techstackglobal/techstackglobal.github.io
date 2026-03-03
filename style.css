@@ -862,7 +862,7 @@ img {
 @media (max-width: 600px) {
     .article-container {
         padding: 0 1rem;
-        margin-top: 80px;
+        margin-top: 150px;
         grid-template-columns: 1fr;
     }
 
