@@ -279,6 +279,31 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
           }
 
+          @media (max-width: 767px) {
+            .deck-container {
+              height: 420px;
+            }
+
+            .deck-card {
+              height: 380px;
+              padding: 1.5rem;
+            }
+
+            .deck-card img {
+              height: 160px;
+              margin-bottom: 0.5rem;
+            }
+
+            .deck-card p {
+              font-size: 0.85rem;
+              margin-bottom: 1rem;
+            }
+
+            .deck-controls {
+              margin-top: -15px;
+            }
+          }
+
           .deck-controls button:hover {
             background: var(--accent);
             color: #000;
@@ -394,14 +419,18 @@
 
             // Mouse / Touch Drag Support
             let isDragging = false;
+            let isScrolling = false;
             let startX = 0;
+            let startY = 0;
             let currentX = 0;
 
             function onStart(x, y, target) {
               // Ignore clicks on links/buttons
               if (target.closest('a') || target.closest('button')) return;
               isDragging = true;
+              isScrolling = false;
               startX = x;
+              startY = y;
               currentX = x;
               // Remove transition visually to make dragging instantaneous
               cards[topIndex].style.transition = 'none';
@@ -409,12 +438,29 @@
               if (hint) hint.style.display = 'none';
             }
 
-            function onMove(x) {
+            function onMove(x, y, e) {
               if (!isDragging) return;
+
               currentX = x;
               const diffX = currentX - startX;
+              const diffY = y - startY;
+
+              // If moving vertically, let the page scroll
+              if (!isScrolling) {
+                if (Math.abs(diffY) > Math.abs(diffX) + 5) { // Threshold to determine scroll
+                  isDragging = false;
+                  isScrolling = true;
+                  updateDeck(); // Restore CSS transitions
+                  return;
+                }
+                if (Math.abs(diffX) > 5) {
+                  isScrolling = false; // Lock into horizontal swipe
+                }
+              }
+
+              if (e && !isScrolling) e.preventDefault(); // Stop scroll when dragging sideways
+
               const rotate = diffX * 0.05;
-              // Instantly update transform
               cards[topIndex].style.transform = `translateZ(0) translateY(0) translateX(${diffX}px) rotate(${rotate}deg)`;
             }
 
@@ -426,19 +472,16 @@
               if (Math.abs(diffX) > 80) { // threshold passed
                 throwCard(diffX < 0 ? 'left' : 'right');
               } else {
-                // return to center smoothly
-                updateDeck();
+                updateDeck(); // return to center smoothly
               }
             }
 
             deck.addEventListener('mousedown', (e) => onStart(e.clientX, e.clientY, e.target));
-            window.addEventListener('mousemove', (e) => onMove(e.clientX));
+            window.addEventListener('mousemove', (e) => onMove(e.clientX, e.clientY, null));
             window.addEventListener('mouseup', onEnd);
 
-            deck.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX, e.touches[0].clientY, e.target), { passive: false });
-            deck.addEventListener('touchmove', (e) => {
-              if (isDragging) { e.preventDefault(); onMove(e.touches[0].clientX); }
-            }, { passive: false });
+            deck.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX, e.touches[0].clientY, e.target), { passive: true });
+            deck.addEventListener('touchmove', (e) => onMove(e.touches[0].clientX, e.touches[0].clientY, e), { passive: false });
             deck.addEventListener('touchend', onEnd);
 
             // Init
