@@ -123,7 +123,8 @@
           .swiper-card-effect {
             width: 100%;
             max-width: 340px;
-            height: 480px;
+            height: 520px;
+            /* Increased to comfortably fit the read review button */
             padding: 30px 0;
             overflow: visible;
           }
@@ -170,6 +171,28 @@
             font-size: 0.95rem;
             line-height: 1.5;
             margin-bottom: auto;
+          }
+
+          /* New Distinct Button Style */
+          .hero-read-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1.25rem;
+            padding: 0.85rem 1.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-glass, rgba(255, 255, 255, 0.1));
+            border-radius: 8px;
+            color: var(--accent, #38bdf8);
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+          }
+
+          .hero-read-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.2);
           }
 
           /* Custom Navigation Styles floating outside the slides */
@@ -238,7 +261,7 @@
           /* Mobile Responsiveness */
           @media (max-width: 767px) {
             .swiper-card-effect {
-              height: 380px;
+              height: 420px;
               max-width: 280px;
               padding: 20px 0;
             }
@@ -284,9 +307,9 @@
                 <img src="posts/images/sony-wh-1000xm5-front.jpg" alt="Sony WH-1000XM5" loading="lazy">
                 <h3>Sony WH-1000XM5</h3>
                 <p>Top-tier active noise cancellation and supreme all-day comfort for deep focus sessions.</p>
-                <a class="read-more" href="posts/sony-wh-1000xm5-review.html"
-                  style="font-weight: 700; display:inline-block; margin-top: 1rem;">Read Review <i
-                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                <a class="hero-read-btn" href="posts/sony-wh-1000xm5-review.html">
+                  Read Review <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
 
               <!-- Card 1: Shure -->
@@ -298,9 +321,9 @@
                 <img src="posts/images/shure-sm7db-primary.jpg" alt="Shure SM7dB Microphone" loading="lazy">
                 <h3>Shure SM7dB</h3>
                 <p>The industry standard podcast microphone, now powered with a built-in clean preamp.</p>
-                <a class="read-more" href="posts/shure-sm7db-review.html"
-                  style="font-weight: 700; display:inline-block; margin-top: 1rem;">Read Review <i
-                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                <a class="hero-read-btn" href="posts/shure-sm7db-review.html">
+                  Read Review <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
 
               <!-- Card 2: Alienware -->
@@ -312,9 +335,9 @@
                 <img src="posts/images/alienware-aw3423dwf-front.jpg" alt="Alienware AW3423DWF" loading="lazy">
                 <h3>Alienware AW3423DWF</h3>
                 <p>Stunning QD-OLED ultrawide performance delivering flawless visual immersion.</p>
-                <a class="read-more" href="posts/alienware-aw3423dwf-review.html"
-                  style="font-weight: 700; display:inline-block; margin-top: 1rem;">Read Review <i
-                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                <a class="hero-read-btn" href="posts/alienware-aw3423dwf-review.html">
+                  Read Review <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
             </div>
             <!-- Clean Pagination Dots -->
