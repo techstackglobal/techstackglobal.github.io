@@ -241,7 +241,6 @@ def main():
                 html_files.append(os.path.join(root, file))
                 
     import sys
-    sys.stdout = open("audit_report_utf8.txt", "w", encoding="utf-8")
     
     print("=== BEGINNING SEO INFRASTRUCTURE AUDIT ===\n")
     for f in html_files:
