@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06NR0F5381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-06NR0F5381');
+  </script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="impact-site-verification" value="50e160eb-0694-4afd-bd21-9998fbb1e0f5" />
+  <title>TechStack Global | Smarter Tech Decisions</title>
+  <meta
+    content="TechStack Global delivers expert tech reviews, buying guides, and practical recommendations on consumer electronics, software, and productivity tools to help you make smarter tech decisions."
+    name="description" />
+  <meta
+    content="tech reviews, buying guides, consumer electronics, productivity tools, audio gear, mobile devices, software reviews"
+    name="keywords" />
+  <!-- OpenGraph / Social Media -->
+  <meta content="website" property="og:type" />
+  <meta content="https://techstackglobal.github.io/index.html" property="og:url" />
+  <meta content="TechStack Global — Smarter Tech Decisions" property="og:title" />
+  <meta
+    content="Reviews, buying guides and how-tos covering consumer electronics, software, audio, mobile, and productivity tools."
+    property="og:description" />
+  <meta content="https://techstackglobal.github.io/assets/og-image.jpg" property="og:image" />
+  <!-- Twitter -->
+
+
+
+  <!-- Google Fonts: Inter for that premium tech feel-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="style.css?v=9" rel="stylesheet" />
+  <!-- FontAwesome for Icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="assets/icons/favicon-32.png?v=6" rel="icon" sizes="32x32" type="image/png" />
+  <link href="assets/icons/favicon-16.png?v=6" rel="icon" sizes="16x16" type="image/png" />
+  <link href="assets/icons/techstack-logo-192.png?v=6" rel="apple-touch-icon" sizes="192x192" />
+  <link href="assets/icons/favicon.ico?v=6" rel="shortcut icon" />
+  <script type="application/ld+json">
+					{
+					  "@context": "https://schema.org",
+					  "@type": "WebSite",
+					  "name": "TechStack Global",
+					  "url": "https://techstackglobal.github.io/",
+					  "description": "Expert tech reviews, buying guides, and practical recommendations."
+					}
+					</script>
+  <script type="application/ld+json">
+                    {
+                      "@context":"https://schema.org",
+                      "@type":"Organization",
+                      "name":"TechStack Global",
+                      "url":"https://techstackglobal.github.io/",
+                      "logo":"https://techstackglobal.github.io/assets/icons/techstack-logo-192.png",
+                      "sameAs": []
+                    }
+                    </script>
+  <link href="https://techstackglobal.github.io/index.html" rel="canonical" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="TechStack Global — Smarter Tech Decisions" name="twitter:title" />
+  <meta
+    content="Reviews, buying guides and how-tos covering consumer electronics, software, audio, mobile, and productivity tools."
+    name="twitter:description" />
+  <meta content="https://techstackglobal.github.io/assets/og-image.jpg" name="twitter:image" />
+</head>
+
+<body class="dark-theme homepage">
+  <!-- Ambient Background Grid (Visual Only)-->
+  <div class="ambient-grid"></div>
+  <div class="glow-orb top-left"></div>
+  <div class="glow-orb bottom-right"></div>
+  <header class="glass-header">
+    <nav class="container">
+      <div class="logo">
+        <a href="index.html">
+          TechStack<span class="accent">Global</span>
+        </a>
+      </div>
+      <button aria-label="Toggle Menu" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="amazon-stack.html">Amazon Stack</a></li>
+        <li><a href="blog.html">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- SEO Semantic Hero Section-->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Make Smarter <br /><span class="gradient-text">Tech Decisions.</span>
+        </h1>
+        <p class="hero-sub" style="font-size: 1.25rem; max-width: 500px; margin-top: 1rem;">No hype. No
+          fluff.
+          Just clear guidance on the tech that powers modern work.</p>
+
+      </div>
+      <!-- Pull-Out Animated Deck -->
+      <div class="hero-visual" style="position: relative;">
+        <style>
+          .deck-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 520px;
+            margin: 0 auto;
+            perspective: 1200px;
+            transform-style: preserve-3d;
+          }
+
+          .deck-card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            border-top: 4px solid var(--accent);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            cursor: grab;
+            user-select: none;
+            will-change: transform, opacity;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            /* Ultra-smooth springy transitions when dropping or clicking next */
+            transition: transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.2), opacity 0.4s ease-out;
+          }
+
+          .deck-card:active {
+            cursor: grabbing;
+          }
+
+          .deck-card img {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            pointer-events: none;
+            background: #ffffff;
+            /* White bg frame to make transparent/cutout images pop */
+            padding: 0.5rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            /* Slight inner depth styling */
+          }
+
+          .deck-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            color: white;
+          }
+
+          .deck-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            pointer-events: none;
+            flex-grow: 1;
+          }
+
+          /* The pull indicator */
+          .pull-indicator {
+            position: absolute;
+            top: -30px;
+            right: 10px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            opacity: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 10;
+            animation: bounceX 2s infinite ease-in-out;
+            pointer-events: none;
+          }
+
+          @keyframes bounceX {
+
+            0%,
+            100% {
+              transform: translateX(0);
+              opacity: 0.8;
+            }
+
+            50% {
+              transform: translateX(-10px);
+              opacity: 0.4;
+            }
+          }
+
+          /* Deck states based on data-depth attributes controlled by JS */
+          .deck-card[data-depth="0"] {
+            transform: translateZ(0) translateY(0) scale(1);
+            z-index: 3;
+            opacity: 1;
+          }
+
+          .deck-card[data-depth="1"] {
+            transform: translateZ(-60px) translateY(20px) scale(0.92);
+            z-index: 2;
+            opacity: 0.7;
+          }
+
+          .deck-card[data-depth="2"] {
+            transform: translateZ(-120px) translateY(40px) scale(0.84);
+            z-index: 1;
+            opacity: 0.3;
+          }
+
+          /* Thrown away states */
+          .deck-card.throw-left {
+            transform: translateZ(0) translateX(-150%) rotate(-15deg) !important;
+            opacity: 0 !important;
+          }
+
+          .deck-card.throw-right {
+            transform: translateZ(0) translateX(150%) rotate(15deg) !important;
+            opacity: 0 !important;
+          }
+
+          /* Controls */
+          .deck-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin: 0.5rem auto 0;
+            position: relative;
+            z-index: 10;
+            pointer-events: none;
+          }
+
+          @media (min-width: 768px) {
+            .deck-controls {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: calc(100% + 120px);
+              max-width: none;
+              justify-content: space-between;
+              margin: 0;
+            }
+          }
+
+          .deck-controls button {
+            pointer-events: auto;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-glass);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          }
+
+          @media (max-width: 767px) {
+            .deck-container {
+              height: 330px;
+            }
+
+            .deck-card {
+              height: 300px;
+              padding: 1.25rem;
+            }
+
+            .deck-card img {
+              height: 110px;
+              margin-bottom: 0.5rem;
+              border-radius: 6px;
+              padding: 0.25rem;
+            }
+
+            .deck-card h3 {
+              font-size: 1.1rem;
+              margin-bottom: 0.25rem;
+            }
+
+            .deck-card p {
+              font-size: 0.8rem;
+              margin-bottom: 0.5rem;
+              line-height: 1.3;
+            }
+
+            .deck-controls {
+              margin-top: -20px;
+            }
+
+            .deck-controls button {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .deck-controls button:hover {
+            background: var(--accent);
+            color: #000;
+            transform: scale(1.1);
+          }
+
+          .deck-controls button i {
+            font-size: 1.1rem;
+          }
+        </style>
+
+        <div class="deck-container" id="reviewDeck">
+          <!-- The indicator shows up to hint users to swipe -->
+          <div class="pull-indicator" id="pullHint">&larr; Pull to next</div>
+
+          <!-- Card 0: Sony -->
+          <div class="deck-card" data-index="0">
+            <div
+              style="font-size: 0.75rem; color: var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-headphones"></i> Audio
+            </div>
+            <img src="posts/images/sony-wh-1000xm5-front.jpg" alt="Sony WH-1000XM5" loading="lazy">
+            <h3>Sony WH-1000XM5</h3>
+            <p>Top-tier active noise cancellation and supreme all-day comfort for deep focus sessions.</p>
+            <a class="read-more" href="posts/sony-wh-1000xm5-review.html"
+              style="font-weight: 700; display:inline-block; margin-top: auto;">Read Review <i
+                class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+          </div>
+
+          <!-- Card 1: Shure -->
+          <div class="deck-card" data-index="1">
+            <div
+              style="font-size: 0.75rem; color: var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-microphone"></i> Broadcasting
+            </div>
+            <img src="posts/images/shure-sm7db-primary.jpg" alt="Shure SM7dB Microphone" loading="lazy">
+            <h3>Shure SM7dB</h3>
+            <p>The industry standard podcast microphone, now powered with a built-in clean preamp.</p>
+            <a class="read-more" href="posts/shure-sm7db-review.html"
+              style="font-weight: 700; display:inline-block; margin-top: auto;">Read Review <i
+                class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+          </div>
+
+          <!-- Card 2: Alienware -->
+          <div class="deck-card" data-index="2">
+            <div
+              style="font-size: 0.75rem; color: var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-desktop"></i> Displays
+            </div>
+            <img src="posts/images/alienware-aw3423dwf-front.jpg" alt="Alienware AW3423DWF" loading="lazy">
+            <h3>Alienware AW3423DWF</h3>
+            <p>Stunning QD-OLED ultrawide performance delivering flawless visual immersion.</p>
+            <a class="read-more" href="posts/alienware-aw3423dwf-review.html"
+              style="font-weight: 700; display:inline-block; margin-top: auto;">Read Review <i
+                class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+
+        <div class="deck-controls">
+          <button id="deckPrev" aria-label="Previous Review"><i class="fa-solid fa-arrow-left"></i></button>
+          <span style="display: none;" id="deckCount">1 / 3</span>
+          <button id="deckNext" aria-label="Next Review"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const deck = document.getElementById('reviewDeck');
+            if (!deck) return;
+
+            const cards = Array.from(deck.querySelectorAll('.deck-card'));
+            const prevBtn = document.getElementById('deckPrev');
+            const nextBtn = document.getElementById('deckNext');
+            const countEl = document.getElementById('deckCount');
+            const hint = document.getElementById('pullHint');
+
+            let topIndex = 0;
+            const total = cards.length;
+
+            function updateDeck() {
+              cards.forEach((card, i) => {
+                card.classList.remove('throw-left', 'throw-right');
+                card.style.transition = ''; // reset to CSS transition
+                card.style.transform = ''; // clears inline drag transforms
+
+                // Distance from current top card
+                let depth = (i - topIndex + total) % total;
+                card.setAttribute('data-depth', depth.toString());
+              });
+              countEl.textContent = `${topIndex + 1} / ${total}`;
+            }
+
+            function throwCard(direction) {
+              const currentTopCard = cards[topIndex];
+              // Apply the throw animation class
+              currentTopCard.classList.add(direction === 'left' ? 'throw-left' : 'throw-right');
+
+              // Hide hint after first interaction
+              if (hint) hint.style.display = 'none';
+
+              // Wait enough time for the throw animation to clear visually before re-stacking
+              setTimeout(() => {
+                if (direction === 'left' || direction === 'next') {
+                  topIndex = (topIndex + 1) % total;
+                } else {
+                  topIndex = (topIndex - 1 + total) % total;
+                }
+                updateDeck();
+              }, 450); // matches CSS transition timing
+            }
+
+            nextBtn.addEventListener('click', () => throwCard('left'));
+            prevBtn.addEventListener('click', () => throwCard('right'));
+
+            // Mouse / Touch Drag Support
+            let isDragging = false;
+            let isScrolling = false;
+            let startX = 0;
+            let startY = 0;
+            let currentX = 0;
+
+            function onStart(x, y, target) {
+              // Ignore clicks on links/buttons
+              if (target.closest('a') || target.closest('button')) return;
+              isDragging = true;
+              isScrolling = false;
+              startX = x;
+              startY = y;
+              currentX = x;
+              // Remove transition visually to make dragging instantaneous
+              cards[topIndex].style.transition = 'none';
+
+              if (hint) hint.style.display = 'none';
+            }
+
+            function onMove(x, y, e) {
+              if (!isDragging) return;
+
+              currentX = x;
+              const diffX = currentX - startX;
+              const diffY = y - startY;
+
+              // If moving vertically, let the page scroll
+              if (!isScrolling) {
+                if (Math.abs(diffY) > Math.abs(diffX) + 5) { // Threshold to determine scroll
+                  isDragging = false;
+                  isScrolling = true;
+                  updateDeck(); // Restore CSS transitions
+                  return;
+                }
+                if (Math.abs(diffX) > 5) {
+                  isScrolling = false; // Lock into horizontal swipe
+                }
+              }
+
+              if (e && !isScrolling) e.preventDefault(); // Stop scroll when dragging sideways
+
+              const rotateZ = diffX * 0.08;
+              const scale = Math.max(0.9, 1 - Math.abs(diffX) * 0.0003); // Slightly shrink while dragging
+              cards[topIndex].style.transform = `translateZ(0) translateY(0) translateX(${diffX}px) rotateZ(${rotateZ}deg) scale(${scale})`;
+            }
+
+            function onEnd() {
+              if (!isDragging) return;
+              isDragging = false;
+              const diffX = currentX - startX;
+
+              if (Math.abs(diffX) > 80) { // threshold passed
+                throwCard(diffX < 0 ? 'left' : 'right');
+              } else {
+                updateDeck(); // return to center smoothly
+              }
+            }
+
+            deck.addEventListener('mousedown', (e) => onStart(e.clientX, e.clientY, e.target));
+            window.addEventListener('mousemove', (e) => onMove(e.clientX, e.clientY, null));
+            window.addEventListener('mouseup', onEnd);
+
+            deck.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX, e.touches[0].clientY, e.target), { passive: true });
+            deck.addEventListener('touchmove', (e) => onMove(e.touches[0].clientX, e.touches[0].clientY, e), { passive: false });
+            deck.addEventListener('touchend', onEnd);
+
+            // Init
+            updateDeck();
+
+            // Show hint briefly on load
+            setTimeout(() => { if (hint) hint.style.opacity = '1'; }, 1500);
+          });
+        </script>
+      </div>
+    </section>
+    <!-- Featured Categories-->
+    <section class="container section-padding" id="categories" style="padding-top: 2rem;">
+      <div class="section-header">
+        <h2>Explore the Stack</h2>
+        <p>Browse hardware and smart digital tools by category</p>
+      </div>
+      <div class="category-grid"
+        style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 900px; margin: 0 auto;">
+        <a class="cat-card featured-cat" href="amazon-stack.html">
+          <i class="fa-brands fa-amazon"></i>
+          <h3>Amazon Stack</h3>
+          <p>Product Reviews</p>
+        </a>
+        <a class="cat-card" href="blog.html" style="text-decoration: none;">
+          <i class="fa-solid fa-newspaper"></i>
+          <h3>Guides</h3>
+          <p>In depth comparison guides and setups</p>
+        </a>
+        <a class="cat-card" href="smart-tools.html" style="text-decoration: none;">
+          <i class="fa-solid fa-microchip"></i>
+          <h3>Smart Tools</h3>
+          <p>AI, software, and digital productivity</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Lead Capture / Newsletter-->
+    <!-- Lead Capture / Newsletter CTA -->
+    <section class="newsletter-section section-padding">
+      <div class="container cta-box glass-panel"
+        style="border: 1px solid var(--border-glass); padding: 2.5rem; border-radius: var(--border-radius); text-align: center; max-width: 700px; margin: 0 auto;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Get Practical Tech Picks</h2>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">Weekly
+          reviews, guides, and curated deals for smart tech buyers.</p>
+        <form action="https://formsubmit.co/techstackglobal9@gmail.com" class="email-form" method="POST"
+          style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+          <input name="email" placeholder="Enter your best email address" required=""
+            style="padding: 1rem; font-size: 1rem; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(0,0,0,0.2); color: white; flex: 1; min-width: 250px; max-width: 350px;"
+            type="email" />
+          <input name="_next" type="hidden" value="https://techstackglobal.github.io/thank-you.html" />
+          <input name="_subject" type="hidden" value="New Lead Magnet Submission - TechStack Global" />
+          <input name="_captcha" type="hidden" value="false" />
+          <button class="btn-primary" style="padding: 1rem 1.5rem; border-radius: 8px;" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="glass-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;"><a href="index.html"
+            style="text-decoration: none; color: inherit;">TechStack<span class="accent">Global</span></a></div>
+        <p>Tech guides built for everyday work, study, and smarter decisions.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> TechStack Global. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
