@@ -123,8 +123,8 @@
           .swiper-card-effect {
             width: 100%;
             max-width: 340px;
-            height: 520px;
-            /* Increased to comfortably fit the read review button */
+            height: 540px;
+            /* Increased to accommodate extra text lines */
             padding: 30px 0;
             overflow: visible;
           }
@@ -180,6 +180,8 @@
             justify-content: space-between;
             margin-top: auto;
             padding: 0.85rem 1.25rem;
+            flex-shrink: 0;
+            /* Prevents the button from being squished internally when text is long */
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border-glass, rgba(255, 255, 255, 0.1));
             border-radius: 8px;
@@ -261,7 +263,7 @@
           /* Mobile Responsiveness */
           @media (max-width: 767px) {
             .swiper-card-effect {
-              height: 420px;
+              height: 440px;
               max-width: 280px;
               padding: 20px 0;
             }
