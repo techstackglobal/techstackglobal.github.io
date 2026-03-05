@@ -10,7 +10,9 @@ ET.register_namespace('', 'http://www.sitemaps.org/schemas/sitemap/0.9')
 new_urls = [
     'https://techstackglobal.github.io/posts/best-noise-cancelling-headphones-2026.html',
     'https://techstackglobal.github.io/posts/best-podcast-microphones-2026.html',
-    'https://techstackglobal.github.io/posts/best-ultrawide-monitors-2026.html'
+    'https://techstackglobal.github.io/posts/best-ultrawide-monitors-2026.html',
+    'https://techstackglobal.github.io/posts/best-microphones-for-remote-work-2026.html',
+    'https://techstackglobal.github.io/posts/best-headphones-for-zoom-meetings-2026.html'
 ]
 
 existing = [url.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text for url in root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url')]
