@@ -1,0 +1,502 @@
+﻿=== BEGINNING SEO INFRASTRUCTURE AUDIT ===
+
+PAGE: /about.html
+Title: OK (Length: 57)
+Meta Description: OK (Length: 108)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /affiliate-disclosure.html
+Title: OK (Length: 39)
+Meta Description: OK (Length: 126)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /amazon-stack.html
+Title: OK (Length: 62)
+Meta Description: OK (Length: 137)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /blog.html
+Title: OK (Length: 49)
+Meta Description: OK (Length: 158)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /contact.html
+Title: OK (Length: 57)
+Meta Description: OK (Length: 137)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /index.html
+Title: OK (Length: 41)
+Meta Description: OK (Length: 112)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /privacy-policy.html
+Title: OK (Length: 33)
+Meta Description: OK (Length: 137)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /smart-tools.html
+Title: OK (Length: 53)
+Meta Description: OK (Length: 122)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /terms-of-service.html
+Title: OK (Length: 35)
+Meta Description: OK (Length: 138)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /thank-you.html
+Title: OK (Length: 28)
+Meta Description: OK (Length: 46)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK (Intentional Noindex)
+Broken Links: None
+--------------------------------
+PAGE: /posts/alienware-aw3423dwf-review.html
+Title: OK (Length: 62)
+Meta Description: OK (Length: 155)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/alienware-aw3423dwf-vs-odyssey-g8.html
+Title: WARNING (Length: 86 > 70)
+Meta Description: OK (Length: 160)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/apple-macbook-pro-m4-pro-review.html
+Title: OK (Length: 57)
+Meta Description: OK (Length: 142)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-headphones-for-remote-work-2026.html
+Title: OK (Length: 57)
+Meta Description: OK (Length: 153)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-headphones-for-zoom-meetings-2026.html
+Title: OK (Length: 38)
+Meta Description: OK (Length: 145)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-laptops-for-students-2026.html
+Title: OK (Length: 49)
+Meta Description: OK (Length: 169)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-microphones-for-remote-work-2026.html
+Title: OK (Length: 37)
+Meta Description: OK (Length: 156)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-noise-cancelling-headphones-2026.html
+Title: OK (Length: 39)
+Meta Description: OK (Length: 151)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-podcast-microphones-2026.html
+Title: OK (Length: 31)
+Meta Description: OK (Length: 134)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-premium-laptop-for-work-2026.html
+Title: OK (Length: 55)
+Meta Description: OK (Length: 173)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-remote-work-setup-2026.html
+Title: OK (Length: 54)
+Meta Description: OK (Length: 155)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-ultrawide-monitor-for-productivity-2026.html
+Title: OK (Length: 63)
+Meta Description: OK (Length: 148)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/best-ultrawide-monitors-2026.html
+Title: OK (Length: 30)
+Meta Description: OK (Length: 156)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/bose-qc-ultra-review.html
+Title: OK (Length: 66)
+Meta Description: OK (Length: 185)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/budget-laptops-under-1000.html
+Title: OK (Length: 57)
+Meta Description: OK (Length: 164)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:type
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/dell-thunderbolt-smart-dock-review.html
+Title: OK (Length: 68)
+Meta Description: OK (Length: 180)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/dell-xps-15-9530-review.html
+Title: OK (Length: 54)
+Meta Description: OK (Length: 151)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/do-you-need-thunderbolt-dock.html
+Title: OK (Length: 41)
+Meta Description: OK (Length: 148)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/is-a-4k-monitor-worth-it.html
+Title: OK (Length: 49)
+Meta Description: OK (Length: 148)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/is-samsung-990-pro-worth-it.html
+Title: OK (Length: 44)
+Meta Description: OK (Length: 158)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/lg-27us500-w-ultrafine-monitor-review.html
+Title: OK (Length: 66)
+Meta Description: OK (Length: 171)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/samsung-990-pro-ssd-review.html
+Title: OK (Length: 56)
+Meta Description: OK (Length: 171)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/samsung-odyssey-g8-review.html
+Title: OK (Length: 50)
+Meta Description: OK (Length: 145)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/samsung-odyssey-g8-vs-alienware-aw3423dwf.html
+Title: OK (Length: 58)
+Meta Description: OK (Length: 152)
+Canonical: OK
+OpenGraph: MISSING TAGS: og:title, og:description, og:image, og:url, og:type
+Twitter Card: MISSING TAGS: twitter:card, twitter:title, twitter:description, twitter:image
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/shure-sm7b-review.html
+Title: OK (Length: 59)
+Meta Description: OK (Length: 154)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/shure-sm7b-vs-sm7db.html
+Title: OK (Length: 50)
+Meta Description: OK (Length: 146)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/shure-sm7db-review.html
+Title: OK (Length: 65)
+Meta Description: OK (Length: 133)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/sony-wh-1000xm5-review.html
+Title: OK (Length: 62)
+Meta Description: OK (Length: 165)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/sony-xm5-vs-bose-qc-ultra.html
+Title: OK (Length: 49)
+Meta Description: OK (Length: 148)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+PAGE: /posts/surface-laptop-studio-2-review.html
+Title: OK (Length: 47)
+Meta Description: OK (Length: 150)
+Canonical: OK
+OpenGraph: OK
+Twitter Card: OK
+Schema: OK
+H1 Count: 1
+Viewport: OK
+Indexing: OK
+Broken Links: None
+--------------------------------
+
+
+=== SECONDARY ISSUES REPORT ===
+
+Duplicate Meta Descriptions: None
+
+Duplicate Titles: None
+
+Image Alt Text Issues:
+Image Alt Text: OK
+
+
+=== SITE RISK SUMMARY ===
+Total Pages Scanned: 40
+Pages With Critical Errors: 0
+Pages With Duplicate Meta: 0
+Pages With Duplicate Titles: 0
+Pages With Missing Schema: 0
+Pages With Missing Alt Text: 0
+Clean Pages: 40
