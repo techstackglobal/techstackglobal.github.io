@@ -25,7 +25,7 @@ stats = {
 def get_expected_live_url(filepath):
     rel_path = os.path.relpath(filepath, BASE_DIR).replace('\\', '/')
     if rel_path == 'index.html':
-        return f"{BASE_URL}/"
+        return f"{BASE_URL}/index.html"
     return f"{BASE_URL}/{rel_path}"
 
 def is_valid_url(url, current_filepath):
