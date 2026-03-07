@@ -19,43 +19,25 @@ def main():
     date_str = datetime.now().strftime('%Y-%m-%d')
     sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
     
-    # Strictly formatted XML declaration with double quotes
-    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    # Minimal XML without indentation or extra tags
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
     
-    html_files = sorted(get_html_files()) # Sorted for consistency
+    html_files = sorted(get_html_files())
     
     for f in html_files:
         rel_path = os.path.relpath(f, BASE_DIR).replace('\\', '/')
-        # Exclude technical or irrelevant files
         if rel_path in ['404.html', 'thank-you.html', 'google50e160eb06944afd.html']:
             continue
             
         url = f"{BASE_URL}/{rel_path}"
-        # Priority mapping
-        if rel_path == 'index.html':
-            priority = "1.0"
-        elif rel_path == 'blog.html':
-            priority = "0.9"
-        elif rel_path.startswith('posts/'):
-            priority = "0.8"
-        else:
-            priority = "0.6"
-            
-        xml_content += f'  <url>\n'
-        xml_content += f'    <loc>{url}</loc>\n'
-        xml_content += f'    <lastmod>{date_str}</lastmod>\n'
-        xml_content += f'    <changefreq>monthly</changefreq>\n'
-        xml_content += f'    <priority>{priority}</priority>\n'
-        xml_content += f'  </url>\n'
+        xml_content += f'<url><loc>{url}</loc><lastmod>{date_str}</lastmod></url>'
         
-    xml_content += '</urlset>' # No trailing newline for maximum compatibility
+    xml_content += '</urlset>'
     
-    # Write with LF (line_buffering=False and newline='\n')
     with open(sitemap_path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(xml_content)
         
-    print(f"Sitemap generated at {sitemap_path}")
+    print(f"Minimal sitemap generated at {sitemap_path}")
 
 if __name__ == "__main__":
     main()
