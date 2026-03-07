@@ -19,24 +19,27 @@ def main():
     date_str = datetime.now().strftime('%Y-%m-%d')
     sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
     
+    # Strictly formatted XML declaration with double quotes
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
-    html_files = get_html_files()
+    html_files = sorted(get_html_files()) # Sorted for consistency
     
     for f in html_files:
         rel_path = os.path.relpath(f, BASE_DIR).replace('\\', '/')
+        # Exclude technical or irrelevant files
+        if rel_path in ['404.html', 'thank-you.html', 'google50e160eb06944afd.html']:
+            continue
+            
+        url = f"{BASE_URL}/{rel_path}"
+        # Priority mapping
         if rel_path == 'index.html':
-            url = f"{BASE_URL}/"
             priority = "1.0"
         elif rel_path == 'blog.html':
-            url = f"{BASE_URL}/{rel_path}"
             priority = "0.9"
         elif rel_path.startswith('posts/'):
-            url = f"{BASE_URL}/{rel_path}"
             priority = "0.8"
         else:
-            url = f"{BASE_URL}/{rel_path}"
             priority = "0.6"
             
         xml_content += f'  <url>\n'
@@ -46,9 +49,10 @@ def main():
         xml_content += f'    <priority>{priority}</priority>\n'
         xml_content += f'  </url>\n'
         
-    xml_content += '</urlset>\n'
+    xml_content += '</urlset>' # No trailing newline for maximum compatibility
     
-    with open(sitemap_path, 'w', encoding='utf-8') as f:
+    # Write with LF (line_buffering=False and newline='\n')
+    with open(sitemap_path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(xml_content)
         
     print(f"Sitemap generated at {sitemap_path}")
