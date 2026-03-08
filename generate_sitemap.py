@@ -19,8 +19,10 @@ def main():
     date_str = datetime.now().strftime('%Y-%m-%d')
     sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
     
-    # Minimal XML without indentation or extra tags
-    xml_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    # Proper XML with encoding and formatting
+    xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml_urlset_open = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    xml_content = xml_header + xml_urlset_open
     
     html_files = sorted(get_html_files())
     
@@ -29,8 +31,15 @@ def main():
         if rel_path in ['404.html', 'thank-you.html', 'google50e160eb06944afd.html']:
             continue
             
-        url = f"{BASE_URL}/{rel_path}"
-        xml_content += f'<url><loc>{url}</loc><lastmod>{date_str}</lastmod></url>'
+        # Clean URL: remove index.html from the end of URLs for SEO canonicality
+        display_path = rel_path
+        if display_path.endswith('index.html'):
+            display_path = display_path[:-10]
+        elif display_path == 'index.html':
+            display_path = ''
+            
+        url = f"{BASE_URL}/{display_path}"
+        xml_content += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
         
     xml_content += '</urlset>'
     

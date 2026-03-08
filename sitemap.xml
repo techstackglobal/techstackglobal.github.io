@@ -1,175 +1,261 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techstackglobal.github.io/about.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/affiliate-disclosure.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/amazon-stack.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/blog.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/contact.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://techstackglobal.github.io/index.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <loc>https://techstackglobal.github.io/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/alienware-aw3423dwf-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/alienware-aw3423dwf-vs-odyssey-g8.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/apple-macbook-pro-m4-pro-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/best-headphones-for-online-classes-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/best-headphones-for-remote-work-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-headphones-for-zoom-meetings-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-laptops-for-students-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-microphones-for-remote-work-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-noise-cancelling-headphones-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-podcast-microphones-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-premium-laptop-for-work-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-remote-work-setup-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitor-for-productivity-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitor-for-programming-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitors-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/bose-qc-ultra-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/budget-laptops-under-1000.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/dell-thunderbolt-smart-dock-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/dell-xps-15-9530-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/do-you-need-thunderbolt-dock.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/is-a-4k-monitor-worth-it.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/is-samsung-990-pro-worth-it.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/lg-27us500-w-ultrafine-monitor-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/samsung-990-pro-ssd-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/samsung-odyssey-g8-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/samsung-odyssey-g8-vs-alienware-aw3423dwf.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/shure-sm7b-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/shure-sm7b-vs-sm7db.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/shure-sm7db-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/sony-wh-1000xm5-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/sony-xm5-vs-bose-qc-ultra.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/posts/surface-laptop-studio-2-review.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/privacy-policy.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/smart-tools.html</loc>
-    <lastmod>2026-03-07</lastmod>
-  </url>
-  <url>
-    <loc>https://techstackglobal.github.io/terms-of-service.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/best-headphones-for-working-from-home-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-headphones-for-zoom-meetings-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-laptops-for-students-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-microphones-for-remote-work-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://techstackglobal.github.io/posts/best-monitor-for-stock-trading-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-noise-cancelling-headphones-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-podcast-microphones-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-premium-laptop-for-work-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-remote-work-setup-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitor-for-productivity-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitor-for-programming-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/best-ultrawide-monitors-2026.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/bose-qc-ultra-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/budget-laptops-under-1000.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/dell-thunderbolt-smart-dock-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/dell-xps-15-9530-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/do-you-need-thunderbolt-dock.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/is-a-4k-monitor-worth-it.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/is-samsung-990-pro-worth-it.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/lg-27us500-w-ultrafine-monitor-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/samsung-990-pro-ssd-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/samsung-odyssey-g8-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/samsung-odyssey-g8-vs-alienware-aw3423dwf.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/shure-sm7b-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/shure-sm7b-vs-sm7db.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/shure-sm7db-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/sony-wh-1000xm5-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/sony-xm5-vs-bose-qc-ultra.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/posts/surface-laptop-studio-2-review.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/privacy-policy.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/smart-tools.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techstackglobal.github.io/terms-of-service.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

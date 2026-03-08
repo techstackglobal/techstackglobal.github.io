@@ -1,0 +1,10 @@
+{
+  "permission": {
+    "read": {
+      "C:/Users/PMLS/Desktop/Youtube Shorts/b2b_blog/.opencode/get-shit-done/*": "allow"
+    },
+    "external_directory": {
+      "C:/Users/PMLS/Desktop/Youtube Shorts/b2b_blog/.opencode/get-shit-done/*": "allow"
+    }
+  }
+}

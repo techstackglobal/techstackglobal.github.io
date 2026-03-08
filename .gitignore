@@ -27,4 +27,8 @@ build/
 .env.example
 
 # App-specific temporary files
-claude_req.json
+# AI Internal
+.agent/
+.gemini/
+.system_generated/
+claude-code.*

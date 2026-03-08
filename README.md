@@ -52,6 +52,25 @@ The `blogging_project` directory contains several utility scripts:
 -   `deploy_blog.py`: Handles deployment workflows.
 -   `global_logo_fix.py`: Ensures consistent branding across all pages.
 
+## 🛠️ Get Shit Done (GSD) Integration
+
+This project is integrated with [Get Shit Done (GSD)](https://github.com/gsd-build/get-shit-done), a spec-driven development system for AI agents.
+
+### Core Workflow
+GSD provides a structured workflow for building and maintaining this blog:
+1.  **Initialize**: `/gsd:new-project` (Define goals and roadmap)
+2.  **Discuss**: `/gsd:discuss-phase <N>` (Detailed implementation preferences)
+3.  **Plan**: `/gsd:plan-phase <N>` (Research and task planning)
+4.  **Execute**: `/gsd:execute-phase <N>` (AI-driven implementation)
+5.  **Verify**: `/gsd:verify-work <N>` (Automated and manual verification)
+
+### Commands
+-   **Help**: `/gsd:help` (Claude Code/Gemini) or `/gsd-help` (OpenCode).
+-   **Status**: `/gsd:progress` (Check milestone progress).
+-   **Debugging**: `/gsd:debug` (Expert scientific debugging).
+
+The system configs are stored in local directories: `.claude`, `.gemini`, `.opencode`, and `.codex`.
+
 ## ⚖️ Legal
 
 Refer to `affiliate-disclosure.html` for our compliance guidelines regarding affiliate links.

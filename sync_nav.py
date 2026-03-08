@@ -1,50 +1,39 @@
-import os
 import glob
-import re
+from bs4 import BeautifulSoup
 
-nav_pattern = re.compile(r'<ul class="nav-links"[^>]*>.*?</ul>', re.DOTALL)
-
-def update_nav(directory, prefix=""):
-    new_nav = f"""            <button class="menu-toggle" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="{prefix}index.html">Home</a></li>
-                <li><a href="{prefix}amazon-stack.html">Amazon Stack</a></li>
-                <li><a href="{prefix}blog.html">Guides</a></li>
-                <li><a href="{prefix}about.html">About</a></li>
-                <li><a href="{prefix}contact.html">Contact</a></li>
-            </ul>"""
-
-    for file_path in glob.glob(os.path.join(directory, '*.html')):
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        # Let's preserve the "active" class on the current page
-        active_class = ' class="active"'
-        basename = os.path.basename(file_path)
-        
-        # Determine which link should be active based on file name
-        target_nav = new_nav
-        if basename == 'index.html':
-            target_nav = target_nav.replace(f'href="{prefix}index.html"', f'href="{prefix}index.html" class="active"')
-        elif basename == 'amazon-stack.html':
-            target_nav = target_nav.replace(f'href="{prefix}amazon-stack.html"', f'href="{prefix}amazon-stack.html" class="active"')
-        elif basename == 'blog.html':
-            target_nav = target_nav.replace(f'href="{prefix}blog.html"', f'href="{prefix}blog.html" class="active"')
-        elif basename == 'about.html':
-            target_nav = target_nav.replace(f'href="{prefix}about.html"', f'href="{prefix}about.html" class="active"')
-        elif basename == 'contact.html':
-            target_nav = target_nav.replace(f'href="{prefix}contact.html"', f'href="{prefix}contact.html" class="active"')
+def fix_nav():
+    desired_nav_html = """
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../amazon-stack.html">Amazon Stack</a></li>
+        <li><a href="../blog.html">Guides</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    """
+    new_nav_soup = BeautifulSoup(desired_nav_html, 'html.parser').find('ul')
+    
+    changed = 0
+    for file in glob.glob('posts/*.html'):
+        with open(file, 'r', encoding='utf-8') as f:
+            html = f.read()
             
-        new_content = nav_pattern.sub(target_nav, content)
+        soup = BeautifulSoup(html, 'html.parser')
+        ul = soup.find('ul', id='nav-links', class_='nav-links')
+        if not ul:
+            # Let's try to find just ul.nav-links
+            ul = soup.find('ul', class_='nav-links')
+            
+        if ul:
+            old_str = str(ul)
+            new_str = str(new_nav_soup)
+            if old_str != new_str:
+                ul.replace_with(new_nav_soup)
+                with open(file, 'w', encoding='utf-8') as f:
+                    f.write(soup.prettify())
+                changed += 1
+                
+    print(f"Fixed navigation in {changed} files.")
 
-        if new_content != content:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print(f"Updated {file_path}")
-        else:
-            print(f"No changes needed in {file_path}")
-
-update_nav('.', '')
-update_nav('posts', '../')
+if __name__ == '__main__':
+    fix_nav()

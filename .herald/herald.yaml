@@ -1,0 +1,44 @@
+# Herald Configuration for TechStack Global
+server:
+  host: "127.0.0.1"
+  port: 8420
+  public_url: "http://127.0.0.1:8420"
+  log_level: "debug"
+
+auth:
+  client_id: "herald-claude-chat"
+  redirect_uris:
+    - "https://claude.ai/oauth/callback"
+    - "https://claude.ai/api/oauth/callback"
+    - "https://claude.ai/api/mcp/auth_callback"
+
+database:
+  path: "c:\\Users\\PMLS\\Desktop\\Youtube Shorts\\b2b_blog\\.herald\\herald.db"
+
+execution:
+  claude_path: "claude"
+  work_dir: "c:\\Users\\PMLS\\Desktop\\Youtube Shorts\\b2b_blog\\.herald\\work"
+  max_concurrent: 1
+  env:
+    CLAUDE_CODE_ENTRYPOINT: "herald"
+    CLAUDE_CODE_DISABLE_AUTO_UPDATE: "1"
+
+projects:
+  b2b-blog:
+    path: "c:\\Users\\PMLS\\Desktop\\Youtube Shorts\\b2b_blog"
+    description: "TechStack Global B2B Blog"
+    default: true
+    allowed_tools:
+      - "Read"
+      - "Write"
+      - "Edit"
+      - "Bash(python *)"
+      - "Bash(git *)"
+    git:
+      auto_branch: true
+      branch_prefix: "herald/"
+
+tunnel:
+  enabled: true
+  provider: "ngrok"
+  authtoken: "3Ae0hEwOofBTzRR6x7BiQ4YP3sw_3QcsZsPL9nrjuzVAJ3PG8"

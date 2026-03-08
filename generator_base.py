@@ -124,7 +124,7 @@ def generate_page(filepath, title, meta_desc, canonical, og_image, faqs, links, 
             <h2>Why This Category Matters</h2>
             <p>{content_blocks['why_matters']}</p>
 
-            <h2>Top Picks</h2>
+            <h2 id="top-picks">Top Picks</h2>
             {"".join([f'''
             <div class="top-pick">
                 <h3>{p['title']}</h3>
@@ -136,7 +136,7 @@ def generate_page(filepath, title, meta_desc, canonical, og_image, faqs, links, 
             </div>
             ''' for p in top_picks])}
 
-            <h2>Mini Comparison Table</h2>
+            <h2 id="comparison">Mini Comparison Table</h2>
             <div class="table-responsive">
                 <table class="specs-table">
                     <thead>
@@ -163,7 +163,7 @@ def generate_page(filepath, title, meta_desc, canonical, og_image, faqs, links, 
                 </div>
             </div>
 
-            <h2>How to Choose</h2>
+            <h2 id="how-to-choose">How to Choose</h2>
             <p>{content_blocks['how_choose']}</p>
 
             <h2>Accessories &amp; Setup</h2>
@@ -188,8 +188,36 @@ def generate_page(filepath, title, meta_desc, canonical, og_image, faqs, links, 
                 <ul>
                     {"".join(f'<li><a href="{l_href}">{l_text}</a></li>' for l_text, l_href in links)}
                 </ul>
-            </div>
         </article>
+        <div class="sidebar-standard-wrapper">
+            <aside class="sticky-sidebar">
+                <div class="sidebar-widget verdict-widget">
+                    <h4>Quick Verdict</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                        {content_blocks['tldr'][:150]}...
+                    </p>
+                    <a href="{top_picks[0]['link']}?tag=techstackglob-20" class="mini-card-btn" style="width: 100%; text-align: center;" target="_blank" rel="nofollow noopener sponsored">
+                        Check Price →
+                    </a>
+                </div>
+
+                <div class="sidebar-widget nav-widget">
+                    <h4>Navigation</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.75rem;"><a href="#top-picks" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;"><i class="fa-solid fa-star" style="margin-right: 8px; color: var(--accent);"></i> Top Picks</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#comparison" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;"><i class="fa-solid fa-table" style="margin-right: 8px; color: var(--accent);"></i> Comparison Table</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#how-to-choose" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;"><i class="fa-solid fa-bolt" style="margin-right: 8px; color: var(--accent);"></i> How to Choose</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget related-widget">
+                    <h4>Related Guides</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        {"".join([f'<li style="margin-bottom: 0.75rem;"><a href="{l_href}" style="color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; display: flex; align-items: center;"><i class="fa-solid fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; opacity: 0.5;"></i> {l_text[:30]}</a></li>' for l_text, l_href in links[:3]])}
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer class="glass-footer" style="margin-top: 6rem;">
