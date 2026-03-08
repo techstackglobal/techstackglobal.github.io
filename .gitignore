@@ -32,3 +32,4 @@ build/
 .gemini/
 .system_generated/
 claude-code.*
+.herald/
