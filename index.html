@@ -40,7 +40,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
     rel="stylesheet" />
   <link href="style.min.css?v=9" rel="stylesheet" />
-  <!-- FontAwesome for Icons-->
+  <link href="mobile-ux.css" rel="stylesheet" />
+<!-- FontAwesome for Icons-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script type="application/ld+json">
 					{
@@ -67,14 +68,14 @@
   <meta content="TechStack Global" name="twitter:title" />
   <meta content="Expert tech reviews and buying guides for professionals." name="twitter:description" />
   <meta content="https://techstackglobal.github.io/assets/og-image.jpg" name="twitter:image" />
-<meta name="theme-color" content="#0a2540">
-<meta property="og:site_name" content="TechStack Global">
-<meta name="application-name" content="TechStack Global">
-<!-- Site Favicons -->
-<link href="/favicon.ico" rel="icon"/>
-<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta name="theme-color" content="#0a2540">
+  <meta property="og:site_name" content="TechStack Global">
+  <meta name="application-name" content="TechStack Global">
+  <!-- Site Favicons -->
+  <link href="/favicon.ico" rel="icon" />
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
 </head>
 
 <body class="dark-theme homepage">
@@ -320,7 +321,8 @@
                   style="font-size: 0.75rem; color: var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem;">
                   <i class="fa-solid fa-headphones"></i> Audio
                 </div>
-                <img src="posts/images/sony-wh-1000xm5-front.jpg" alt="Sony WH-1000XM5" loading="lazy">
+                <img src="posts/images/sony-wh-1000xm5-front.jpg" alt="Sony WH-1000XM5" loading="eager"
+                  fetchpriority="high">
                 <h3>Sony WH-1000XM5</h3>
                 <p>Top-tier active noise cancellation and supreme all-day comfort for deep focus sessions.</p>
                 <a class="hero-read-btn" href="posts/sony-wh-1000xm5-review.html">
@@ -473,3 +475,4 @@
 </body>
 
 </html>
+

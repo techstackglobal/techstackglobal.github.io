@@ -1,0 +1,208 @@
+/* 
+   ==========================================================================
+   📱 TECHSTACK GLOBAL - MOBILE PERFORMANCE & UX UPGRADE (Phase 2)
+   ==========================================================================
+   Objective: High-readability, fluid-scaling, and premium touch interaction.
+   GSD+HERALD Strategy: High Efficiency, Responsive Asset & Layout Deployment.
+   ==========================================================================
+*/
+
+:root {
+    color-scheme: dark;
+    --site-side-padding-mobile: 1.25rem;
+    --base-font-size-mobile: 16px;
+    --line-height-mobile: 1.7;
+    --touch-target-min: 44px;
+}
+
+/* 🚀 PERFORMANCE & RENDERING OPTIMIZATIONS */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 📱 MOBILE-FIRST READABILITY (Up to 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: var(--base-font-size-mobile);
+        line-height: var(--line-height-mobile);
+        color: #e2e8f0;
+        /* Slightly softer for reduced eye strain */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        letter-spacing: -0.025em;
+        line-height: 1.25;
+    }
+
+    /* FLUID HEADINGS - Using clamp for perfect scaling */
+    h1 {
+        font-size: clamp(1.75rem, 8vw, 2.25rem);
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 6vw, 1.85rem);
+    }
+
+    h3 {
+        font-size: clamp(1.25rem, 5vw, 1.5rem);
+    }
+
+    /* CONTENT SPACING */
+    .container {
+        padding-left: var(--site-side-padding-mobile) !important;
+        padding-right: var(--site-side-padding-mobile) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* TOUCH OPTIMIZATIONS */
+    .btn,
+    button,
+    .nav-links a,
+    .read-more,
+    .hero-read-btn,
+    .view-review-cta {
+        min-height: var(--touch-target-min);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.25rem;
+    }
+
+    /* 📱 GRID REFINEMENT */
+    .blog-grid,
+    .affiliate-grid,
+    .category-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+
+    .blog-card,
+    .glass-card {
+        padding: 1.5rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* NAVIGATION UX */
+    .nav-links {
+        padding: 1.5rem !important;
+        gap: 0.5rem !important;
+        background: rgba(15, 23, 42, 0.98) !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 1.15rem !important;
+        padding: 0.85rem 1rem !important;
+        width: 100%;
+        text-align: left !important;
+        border-radius: 8px;
+        transition: background 0.2s ease;
+    }
+
+    .nav-links a:active {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* 📊 REFINEMENT: Comparison Tables & Data */
+    .comparison-table-wrapper,
+    .table-responsive,
+    .specs-table-container {
+        margin: 1.5rem calc(var(--site-side-padding-mobile) * -1) !important;
+        padding: 0 var(--site-side-padding-mobile) !important;
+        border-radius: 0 !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table,
+    .specs-table {
+        min-width: 600px;
+        /* Force scroll for readability */
+        font-size: 0.85rem !important;
+        border-collapse: collapse !important;
+    }
+
+    /* ARTICLE BODY HYGIENE */
+    .post-body p {
+        margin-bottom: 1.75rem !important;
+        letter-spacing: 0.01em !important;
+    }
+
+    .post-body h2 {
+        margin-top: 2.5rem !important;
+        padding-top: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* 📸 IMAGE RENDERING */
+    .post-hero-img,
+    .post-body-img {
+        margin: 1.5rem 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+
+    /* 📦 AMAZON STACK / PRODUCT THUMBNAILS (Reverting to Live Proportions) */
+    .product-thumbnail-wrapper {
+        width: 100% !important;
+        height: 200px !important;
+        margin: 0 !important;
+        background: white !important;
+        /* Original clean white for products */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        border-radius: 8px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .product-thumbnail {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        padding: 1.25rem !important;
+        /* Proper framing */
+        transition: transform 0.3s ease;
+    }
+
+    .product-item {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: left !important;
+    }
+
+    .product-info {
+        width: 100% !important;
+    }
+
+    /* FOOTER READABILITY */
+    .footer-content {
+        gap: 3rem !important;
+    }
+
+    .footer-links h4 {
+        color: var(--accent);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* 🖥️ DESKTOP PRESERVATION (Ensuring 0 overlap/breakage) */
+@media screen and (min-width: 769px) {
+    /* Explicitly ensuring no style bleed-up */
+}
