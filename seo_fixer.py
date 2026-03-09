@@ -141,6 +141,22 @@ def phase_5():
             if len(title) > 70:
                 title_tag.string = "Do You Need a Thunderbolt 4 Dock in 2026?"
                 changed = True
+        elif "alienware-aw3423dwf-vs-odyssey-g8.html" in f:
+            if len(title) > 70:
+                title_tag.string = "Alienware AW3423DWF vs Samsung Odyssey G8 (2026) | TechStack Global"
+                changed = True
+        elif "bose-qc-ultra-vs-airpods-max.html" in f:
+            if len(title) > 70:
+                title_tag.string = "Bose QC Ultra vs Apple AirPods Max (2026) | TechStack Global"
+                changed = True
+        elif "macbook-pro-m4-vs-dell-xps-15-vs-surface-laptop-studio-2.html" in f:
+            if len(title) > 70:
+                title_tag.string = "MacBook Pro M4 vs Dell XPS 15 vs Surface Studio 2 (2026) | TechStack"
+                changed = True
+        elif "sony-wh-1000xm5-vs-airpods-max.html" in f:
+            if len(title) > 70:
+                title_tag.string = "Sony WH-1000XM5 vs AirPods Max (2026) | TechStack Global"
+                changed = True
                 
         if changed:
             save_html(f, soup, enc)
