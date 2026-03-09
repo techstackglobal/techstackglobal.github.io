@@ -7,6 +7,7 @@
 - [✓] Phase 1: Map existing codebase into `.planning/codebase/`.
 - [✓] Phase 2: Initialize project and requirements in `.planning/`.
 - [ ] Phase 3: Comprehensive SEO & Layout Health Check (Audit Milestone).
+- [ ] Phase 3.1: Content Standardization (Remove Redundant Sections).
 
 ## 🧱 Milestone 2: Technical Debt & Sitemap Recovery
 - [ ] Phase 4: Resolution of Search Console sitemap fetch errors.
