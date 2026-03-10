@@ -1,12 +1,11 @@
 import os
-import glob
 from datetime import datetime
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 BASE_URL = "https://techstackglobal.github.io"
 
 def get_html_files():
-    skip_dirs = ['.git', '.vscode', 'node_modules', '.gemini']
+    skip_dirs = ['.git', '.vscode', 'node_modules', '.gemini', '.agent', '.planning', '.venv', 'tmp', 'tools', 'blogging_project']
     html_files = []
     for root, dirs, files in os.walk(BASE_DIR):
         dirs[:] = [d for d in dirs if d not in skip_dirs]
@@ -19,34 +18,47 @@ def main():
     date_str = datetime.now().strftime('%Y-%m-%d')
     sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
     
-    # Proper XML with encoding and formatting
+    # HERALD Standard: High-compatibility XML with strict UTF-8
     xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    # Optional XML stylesheet can help in some cases, but for GSC, the structure is most critical
     xml_urlset_open = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     xml_content = xml_header + xml_urlset_open
     
     html_files = sorted(get_html_files())
     
+    # 1. Primary Page (Root)
+    xml_content += f'  <url>\n    <loc>{BASE_URL}/</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n'
+
     for f in html_files:
         rel_path = os.path.relpath(f, BASE_DIR).replace('\\', '/')
-        if rel_path in ['404.html', 'thank-you.html', 'google50e160eb06944afd.html']:
+        
+        # Skip utility and low-value pages
+        if rel_path in ['404.html', 'thank-you.html', 'index.html'] or 'google' in rel_path:
             continue
             
-        # Clean URL: remove index.html from the end of URLs for SEO canonicality
-        display_path = rel_path
-        if display_path.endswith('index.html'):
-            display_path = display_path[:-10]
-        elif display_path == 'index.html':
-            display_path = ''
+        # GSD Strategy: Strict canonical URLs
+        # Remove .html extension for cleaner indexing if server supports it, 
+        # but for GH Pages, we keep the .html but ensure consistency.
+        # We also want to assign priority based on depth.
+        
+        url = f"{BASE_URL}/{rel_path}"
+        
+        # Priority Logic: Higher priority for core clusters
+        priority = "0.8"
+        if "posts/" in rel_path:
+            priority = "0.7"
+        if rel_path in ["blog.html", "amazon-stack.html"]:
+            priority = "0.9"
             
-        url = f"{BASE_URL}/{display_path}"
-        xml_content += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+        xml_content += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>{priority}</priority>\n  </url>\n'
         
     xml_content += '</urlset>'
     
-    with open(sitemap_path, 'w', encoding='utf-8', newline='\n') as f:
-        f.write(xml_content)
+    # Write with explicit UTF-8 and ensure NO BOM to prevent GSC parsing errors
+    with open(sitemap_path, 'wb') as f:
+        f.write(xml_content.encode('utf-8'))
         
-    print(f"Minimal sitemap generated at {sitemap_path}")
+    print(f"GSD Optimized sitemap generated at {sitemap_path}")
 
 if __name__ == "__main__":
     main()
