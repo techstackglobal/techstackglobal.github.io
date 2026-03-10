@@ -77,10 +77,30 @@
     /* 📱 GRID REFINEMENT */
     .blog-grid,
     .affiliate-grid,
-    .category-grid {
+    .category-grid,
+    .audience-grid {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 1.25rem !important;
+    }
+
+    .article-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 3rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .sticky-sidebar {
+        width: 100% !important;
+        position: static !important;
+        order: 2; /* Sidebar after content on mobile */
+    }
+
+    .post-body {
+        width: 100% !important;
+        order: 1;
     }
 
     .blog-card,
