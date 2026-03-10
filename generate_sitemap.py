@@ -18,10 +18,14 @@ def main():
     date_str = datetime.now().strftime('%Y-%m-%d')
     sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
     
-    # HERALD Standard: High-compatibility XML with strict UTF-8
+    # HERALD Standard: Ultra-Compatible Schema for Google 2026
     xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    # Optional XML stylesheet can help in some cases, but for GSC, the structure is most critical
-    xml_urlset_open = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    xml_urlset_open = (
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
+        'xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 '
+        'http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n'
+    )
     xml_content = xml_header + xml_urlset_open
     
     html_files = sorted(get_html_files())
@@ -31,19 +35,10 @@ def main():
 
     for f in html_files:
         rel_path = os.path.relpath(f, BASE_DIR).replace('\\', '/')
-        
-        # Skip utility and low-value pages
         if rel_path in ['404.html', 'thank-you.html', 'index.html'] or 'google' in rel_path:
             continue
             
-        # GSD Strategy: Strict canonical URLs
-        # Remove .html extension for cleaner indexing if server supports it, 
-        # but for GH Pages, we keep the .html but ensure consistency.
-        # We also want to assign priority based on depth.
-        
         url = f"{BASE_URL}/{rel_path}"
-        
-        # Priority Logic: Higher priority for core clusters
         priority = "0.8"
         if "posts/" in rel_path:
             priority = "0.7"
@@ -54,11 +49,15 @@ def main():
         
     xml_content += '</urlset>'
     
-    # Write with explicit UTF-8 and ensure NO BOM to prevent GSC parsing errors
     with open(sitemap_path, 'wb') as f:
         f.write(xml_content.encode('utf-8'))
         
-    print(f"GSD Optimized sitemap generated at {sitemap_path}")
+    # Also ensure .nojekyll exists
+    nojekyll_path = os.path.join(BASE_DIR, '.nojekyll')
+    with open(nojekyll_path, 'w') as f:
+        pass
+        
+    print(f"GSD Advanced Sitemap and .nojekyll refreshed.")
 
 if __name__ == "__main__":
     main()
