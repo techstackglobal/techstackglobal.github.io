@@ -92,45 +92,40 @@
         }
 
         /* 🛒 100 SKILLS: CRO Psychological Triggers */
-        .stock-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(0, 255, 157, 0.1);
-            color: #00ff9d;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            border: 1px solid rgba(0, 255, 157, 0.2);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 12px;
-        }
 
-        /* 📱 elite-mobile-cta bar */
-        #floating-mobile-cta {
+        /* 🛒 Universal Floating CTA: Conversion Rocket */
+        #floating-cta {
             position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(15, 23, 42, 0.96);
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(15, 23, 42, 0.9);
             backdrop-filter: blur(12px);
-            padding: 14px 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(59, 130, 246, 0.3);
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            gap: 1.5rem;
             z-index: 2000;
-            transform: translateY(100%);
-            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+            transform: translateY(150%);
+            transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-        #floating-mobile-cta.is-visible {
-            transform: translateY(0);
+        #floating-cta:hover {
+            box-shadow: 0 15px 45px rgba(59, 130, 246, 0.2);
+            border-color: var(--accent);
         }
-        @media (min-width: 769px) {
-            #floating-mobile-cta { display: none !important; }
+        #floating-cta.is-visible { transform: translateY(0); }
+
+        @media (max-width: 768px) {
+            #floating-cta {
+                bottom: 0; left: 0; right: 0;
+                border-radius: 0;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                padding: 1rem 1.5rem;
+                justify-content: space-between;
+                transform: translateY(100%);
+            }
         }
     </style>
 </head>
@@ -177,9 +172,8 @@
                 <h2 style="margin-top: 0; color: var(--accent);">TL;DR Verdict</h2>
                 <p>By offloading spatial processing to the new <strong>X1 Chip</strong> it provides a rock-solid 120-inch virtual display that doesn't jitter. If you're a Steam Deck gamer or a MacBook nomad, this is currently the best investment you can make for your mobile productivity.</p>
                 <div class="cta-center" style="margin-top: 1.5rem;">
-                    <div class="stock-badge"><i class="fa-solid fa-circle-check"></i> In Stock - 2026 Prime</div>
-                    <a href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
-                        class="btn-primary" target="_blank" rel="nofollow noopener sponsored">
+                    <a target="_blank" href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
+                        class="btn-primary"  rel="nofollow noopener sponsored">
                         <i class="fa-brands fa-amazon"></i> Check Price on Amazon
                     </a>
                 </div>
@@ -280,11 +274,10 @@
             </ul>
 
             <div class="in-content-cta" style="margin: 3rem 0;">
-                <div class="stock-badge" style="margin-bottom: 12px;"><i class="fa-solid fa-clock"></i> Limited 2026 Batch</div>
                 <h3>Ready to Upgrade Your Mobile Setup?</h3>
                 <p>The XREAL 1S is currently in stock with 2026 Prime Shipping.</p>
-                <a href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
-                    class="btn-primary affiliate-btn" target="_blank" rel="nofollow noopener sponsored">
+                <a target="_blank" href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
+                    class="btn-primary affiliate-btn"  rel="nofollow noopener sponsored">
                     <i class="fa-brands fa-amazon" style="margin-right: 8px;"></i> View Current Deal on Amazon
                 </a>
             </div>
@@ -347,10 +340,17 @@
                     </div>
                 </div>
                 <div class="mini-affiliate-card">
-                    <div class="mini-card-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <div class="mini-card-icon"><i class="fa-solid fa-code"></i></div>
                     <div class="mini-card-text">
-                        <h5>Noise Cancelling Picks</h5>
-                        <a href="best-noise-cancelling-headphones-2026.html" class="mini-card-btn">Read More</a>
+                        <h5>Coding in AR Guide</h5>
+                        <a href="best-ar-glasses-for-coding-2026.html" class="mini-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="mini-affiliate-card">
+                    <div class="mini-card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="mini-card-text">
+                        <h5>Gaming Setup Guide</h5>
+                        <a href="xreal-1s-gaming-setup-guide-2026.html" class="mini-card-btn">Blueprint</a>
                     </div>
                 </div>
             </div>
@@ -362,11 +362,10 @@
             </div>
 
             <div class="sidebar-widget" style="background: rgba(59,130,246,0.1); border-color: var(--accent-glow);">
-                <div class="stock-badge" style="background: #00ff9d; color: black; border: none; font-size: 0.65rem;">Live Stock Update</div>
                 <h4>Quick Verdict</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 1rem;">The best AR display for remote workers in 2026. Period.</p>
-                <a href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
-                    class="btn-primary" style="width: 100%; font-size: 0.9rem;" target="_blank">Check Price</a>
+                <a target="_blank" href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl"
+                    class="btn-primary" style="width: 100%; font-size: 0.9rem;" >Check Price</a>
             </div>
         </aside>
     </main>
@@ -377,24 +376,24 @@
         </div>
     </footer>
 
-    <!-- 📱 elite-mobile-cta Bar (100 SKILLS: CRO) -->
-    <div id="floating-mobile-cta">
-        <div>
-            <div style="font-size: 0.85rem; font-weight: 800; color: white;">XREAL 1S AR Glasses</div>
-            <div style="font-size: 0.7rem; color: #00ff9d;"><i class="fa-solid fa-circle-check"></i> Prime Available</div>
+    <!-- 🛒 Universal Floating CTA (100 SKILLS: CRO) -->
+    <div id="floating-cta">
+        <div class="cta-info">
+            <div style="font-size: 0.9rem; font-weight: 800; color: white;">XREAL 1S AR Glasses</div>
+            <div style="font-size: 0.75rem; color: #00ff9d;"><i class="fa-solid fa-circle-check"></i> Latest 2026 Model</div>
         </div>
-        <a href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20&linkId=af72c4553410294f56760596951fb583&language=en_US&ref_=as_li_ss_tl" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem; border-radius: 6px;" target="_blank">Check Price</a>
+        <a target="_blank" href="https://www.amazon.com/XREAL-Glasses-Virtual-Supports-Including/dp/B0GC56Z4CR?&linkCode=ll2&tag=techstackglob-20" class="btn-primary" style="padding: 10px 24px; font-size: 0.85rem; border-radius: 50px;" >View on Amazon</a>
     </div>
 
     <script src="../script.js"></script>
     <script>
-        // Floating Mobile CTA Visibility Logic
-        const mobileBar = document.getElementById('floating-mobile-cta');
+        // Universal Floating CTA Visibility Logic
+        const floatingCta = document.getElementById('floating-cta');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 800) {
-                mobileBar.classList.add('is-visible');
+                floatingCta.classList.add('is-visible');
             } else {
-                mobileBar.classList.remove('is-visible');
+                floatingCta.classList.remove('is-visible');
             }
         });
     </script>
